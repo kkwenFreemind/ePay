@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="ZTE_VAS_Deposit" title="ZTE儲值" border="normal" use="com.apt.epay.ui.ocsadmin.ZTE_VASDeposit_Window">
+
+    <grid width="100%">
+
+        <rows>    
+            <row>
+                帳號ID:
+                <textbox id="text_user_code" readonly="true" />
+            </row>            
+            <row>
+                門號:
+                <textbox id="text_mdn" maxlength="10" constraint="no empty"/>
+            </row>
+            <row>
+                促案代碼(Pirce Plan Code)
+                <combobox id="combo_priceplancode">
+                    <comboitem label=""/>
+                </combobox>                                
+                <button label="取得促案代碼"  onClick="ZTE_VAS_Deposit.onGetPricePlanCode()"/>
+            </row>
+            <row>
+                OTP(OneTimePassword)                
+                <textbox id="text_otp"/>
+                <button label="取得OTP"  onClick="ZTE_VAS_Deposit.onGetOTP()"/>
+            </row>
+        </rows>
+    </grid>
+    <separator/>
+    <div align="center">
+        <hbox>
+            <button label="確認" onClick="ZTE_VAS_Deposit.onCommit()" />
+        </hbox>
+    </div>
+</window>

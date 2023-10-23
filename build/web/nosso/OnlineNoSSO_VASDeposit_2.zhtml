@@ -1,0 +1,103 @@
+<html class="no-js" lang="zh-TW" xmlns:zk="zk" xmlns:z="zul">
+<head>
+    <title>亞太電信官方網站</title>
+
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+
+        <!-- 依螢幕尺寸呈現適合的畫面尺寸 start -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <!-- 依螢幕尺寸呈現適合的畫面尺寸 end -->
+
+    <style type="text/css">
+        *{font-family:微軟正黑體;box-sizing: border-box;}
+        body{margin:0px;}	
+    </style>
+</head>
+
+<body>
+
+        <z:window id="OnlineVASDeposit_Window" use="com.apt.epay.ui.OnlineNoSSO_VASDeposit_Window" border="none">
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true"/>
+
+        <z:div style="width: 100%;  margin: auto; border: 1px solid #1a1a1a; margin-bottom: 30px;">
+           
+
+                    <table>
+                        <tr>
+                        <z:div style="background: #008236; color: #ffffff; padding: 3px 5px;">
+                        亞太電信預付卡儲值
+                        </z:div>
+                        </tr>
+                        <tr style="border-bottom: 1px solid grey">
+                            <td width="800px" height="40px" class="aligh-left" style="background: #f4f4f4; line-height: 30px; border-bottom: 1px solid grey;">
+                                    <div style="font-family: '微軟正黑體'; ">
+                                    <z:image src="/img/icon_red.gif"/>
+                                    儲值門號 
+                                    </div>
+				</td>
+				<td width="800px" style="border-bottom: 1px solid grey;">
+                            <z:textbox id="textbox_mdn" width="200px" disabled = "true" style="font-family: '微軟正黑體';"/>
+				</td>
+                        </tr>
+                        
+                        <tr>
+                            <td width="800px" height="40px" class="aligh-left" style="background: #f4f4f4; line-height: 30px; border-bottom: 1px solid grey;">
+                                    <div style="font-family: '微軟正黑體';">
+                                    <z:image src="/img/icon_red.gif"/>
+                                    儲值方案 
+                                    </div>
+                            </td>
+				<td width="800px" style="border-bottom: 1px solid grey;">
+                                <z:radiogroup id="radio_service_type" >
+                                <z:vbox id = "radio_servicevbox">
+                                </z:vbox>
+                                </z:radiogroup>
+                            </td>
+                        </tr>
+			
+                        <tr>
+                            <td width="800px" height="30px" class="aligh-left" style="background: #f4f4f4; line-height: 25px; border-bottom: 1px solid grey;">
+				<div style="font-family: '微軟正黑體';">
+				<z:image src="/img/icon_red.gif"/>
+                            檢核碼 
+                            </div>
+                            </td>
+                            <td width="800px" style="border-bottom: 1px solid grey;">
+                                <z:textbox id="chkcode"  width="200px" disabled = "false" style="font-family: '微軟正黑體'; "/>
+                                <z:captcha id="cpa" length="5" width="150px" height="45px" exclude="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" onClick="cpa.randomValue();chkcode.setFocus(true);" class="word_bottom" />
+ 				</td>
+                        </tr>
+
+                        <tr>
+                            <td width="800px" height="40px" class="aligh-left" style="background: #f4f4f4; line-height: 30px; border-bottom: 1px solid grey;">
+                            <div style="font-family: '微軟正黑體'; ">
+                            <z:image src="/img/icon_red.gif"/>
+                            支付方式 
+                            </div>
+                            </td>
+                            
+                            <td width="800px" style="border-bottom: 1px solid grey;">
+                                <z:button label="信用卡" id="sendVASCreditCardBtn">
+                                <attribute name="onClick">
+                                OnlineVASDeposit_Window.sendCreditCardOrder();
+                                </attribute>
+                                </z:button>
+                        
+                                <z:button label="ATM" id="sendVASATMBtn">
+                                <attribute name="onClick">
+                                OnlineVASDeposit_Window.sendATMOrder();
+                                </attribute>
+                                </z:button>  
+                            </td>
+                        </tr>
+                    </table>               
+
+
+        </z:div>
+  
+    </z:window>
+
+</body>
+</html>
+

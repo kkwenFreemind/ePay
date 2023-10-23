@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" contentType="text/html;charset=UTF-8"?>
+
+<zk>
+
+
+    <borderlayout  use="com.apt.epay.ui.admin.MainLayout">
+
+        <west border="none" size="20%" splittable="true" minsize="150" maxsize="500" collapsible="true"   >
+
+            <tree id="toc" use="com.apt.epay.ui.admin.LayoutTree" pageSize="-1" vflex="true" height="100%" width="100%" >
+
+                <treecols>
+                    <treecol  label="預付卡後台管理"  style="padding:0px; background-color: #92a8d1"/>
+                </treecols>
+
+                <treechildren id="MainMenuTree" use="com.apt.epay.ui.admin.Main_Menu_Tree" >
+
+                   
+                </treechildren>
+
+            </tree>
+
+        </west>
+
+
+        <center autoscroll="true">
+            <include style="padding:3px;" width="99%" id="xcontents" src="${requestScope.contentSrc}"/><!-- prepared by TocTree -->
+        </center>
+    </borderlayout>
+
+</zk>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="DTOne_ServiceInfo_mod_Window" title="修改服務" border="normal" use="com.apt.epay.ui.admin.DTOne_ServiceInfo_mod_Window">
+
+
+    <separator spacing="5px"  bar="true"/>
+
+    <separator bar="true"/>
+    <listbox id="list_serviceinfox" width="100%" mold="paging" pageSize="10" multiple="false"  onSelect="DTOne_ServiceInfo_mod_Window.onSelect()">
+        <listhead>
+            <listheader label="服務代碼(serviceID)"  sort="auto"/>
+            <listheader label="服務名稱(serviceName)"  sort="auto"/>
+            <listheader label="啟用(Flag)"  sort="auto"/>            
+            <listheader label="服務說明(Note)"  sort="auto"/>
+            <listheader label="價格(Price)" sort="auto"/>
+            <listheader label="Operator Name" sort="auto"/>
+            <listheader label="DTOne PriceId" sort="auto"/>
+            <listheader label="PP Promotioncode" sort="auto"/>
+        </listhead>
+    </listbox>
+</window>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="Bucket_mod_Window" title="修改服務" border="normal" use="com.apt.epay.ui.admin.Bucket_mod_Window">
+
+
+    <separator spacing="5px"  bar="true"/>
+
+    <separator bar="true"/>
+    <listbox id="listbox_bucketinfo_log" width="100%" mold="paging" pageSize="10" multiple="false"  onSelect="Bucket_mod_Window.onSelect()">
+        <listhead>
+            <listheader label="服務代碼(serviceID)"/>            
+            <listheader label="帳本代碼(BucketID)"/>
+            <listheader label="REF"/>
+            <listheader label="單位價格(Amount)"/>
+            <listheader label="帳本說明"/>
+        </listhead>
+    </listbox>
+</window>

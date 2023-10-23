@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="Bucket_profile_Window" title="修改帳本資料" border="normal" use="com.apt.epay.ui.admin.Bucket_profile_Window">
+
+
+    <grid width="100%">
+        <rows>
+           <row>
+                服務代碼(serviceID):
+                <textbox id="text_serviceid"/>
+            </row>
+            <row>
+                帳本代碼(BucketID):
+                        <combobox id="combo_bucketid">
+                            <comboitem label="*"/>
+                        </combobox>  
+            </row>
+            <row>
+                Ref:
+                <textbox id="text_ref" />
+            </row>            
+            <row>
+                單位價格(Amount):
+                <textbox id="text_amount" />
+            </row>
+            <row>
+                帳本說明:
+                <textbox id="text_note"/>
+            </row>
+ 
+        </rows>
+    </grid>
+
+    <separator/>
+    <div align="center">
+        <hbox>
+            <button label="修改" onClick="Bucket_profile_Window.onModify()" />
+            <button label="返回"  href="main.zul" />
+
+             </hbox>
+    </div>
+</window>

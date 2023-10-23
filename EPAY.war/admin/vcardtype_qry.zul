@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="VCardType_qry_Window" title="服務查詢" border="normal" use="com.apt.epay.ui.admin.VCardType_qry_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                CardType:
+                <textbox id="text_cardtype"/>
+            </row>
+
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="VCardType_qry_Window.doQuery()" />
+                    <button label="清除" onClick="VCardType_qry_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+    <separator bar="true"/>
+    <listbox id="listbox_cardtype_log"  mold="paging" pageSize="20" multiple="true">
+        <listhead sizable="true">
+            <listheader label="CardType"  sort="auto"/>
+            <listheader label="CardName"  sort="auto"/>
+            <listheader label="價格(Price)" sort="auto"/>
+            <listheader label="數量(Quantity)" sort="auto"/>
+            <listheader label="低水位" sort="auto"/>
+        </listhead>
+    </listbox>
+    <separator/>    
+</window>

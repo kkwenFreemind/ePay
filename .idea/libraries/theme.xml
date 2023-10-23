@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="theme">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/zk7/theme/sapphire.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/theme/silvertail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="DownLoadSerialNumFile_Window" title="產生序號檔案" border="normal" use="com.apt.epay.ui.admin.DownLoadSerialNumFile_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                品項:
+                <textbox id="text_cardname" />
+            </row>
+            <row>
+                價格:
+                <textbox id="text_price"/>
+            </row>
+            <row>
+                數量:
+                <textbox id="text_quantity" readonly="true"/>
+            </row>   
+            <row>
+                <hbox>
+                    <button label="產生並下載序號檔" onClick="DownLoadSerialNumFile_Window.Add()" />
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+</window>

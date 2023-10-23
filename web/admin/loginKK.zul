@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<div align="center">
+    <window mode="highlighted" id="loginWnd"  title="使用者登入" border="normal" width="450px" use="com.apt.epay.ui.admin.LoginWindow" onOK="loginWnd.onLogin()"  >
+
+        <grid >
+            <rows>
+                <row>登入帳號:
+                    <textbox id="username" constraint="no empty" tabindex="1" onFocus="true"/>
+                </row>
+                <row>登入密碼:
+                    <textbox id="password" type="password" constraint="no empty" tabindex="2"/>
+                </row>
+                <row>
+                    <hbox>
+                        <vbox>
+                            檢核碼
+                            
+                        </vbox>
+                        <vbox>
+                         </vbox>
+                    </hbox>
+                           <textbox id="chkcode"  tabindex="3" />
+                            <captcha id="cpa" length="5" width="130px" height="45px" exclude="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+                            <button label="重新產生"  onClick="cpa.randomValue();chkcode.setFocus(true);" tabindex="-1"/>
+                    
+                    <!--<textbox id="chkcode"  tabindex="3" /> -->
+                </row>
+            </rows>
+        </grid>
+        <div align="center">
+            
+            <button label="登入" onClick="loginWnd.onLogin()" tabindex="4"/>
+            
+        </div>
+    </window>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信實體卡片儲值" ?>
+<?meta content="text/html; charset=UTF-8" pageEncoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window title="交易訊息" border="normal">
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true" />
+        <style src="/assets-cp/css/apt-cp.css"/>
+        <div align="center">無法辨別是否為亞太用戶</div>
+        <div align="center">
+            <button label="回會員中心" onClick="Executions.sendRedirect("https://pv.www.aptg.com.tw/ecare/ecHome.seam")"> 
+            </button>
+        </div>        
+    </window>
+</zk>

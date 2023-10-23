@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="zk7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zkex.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zhtml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zul.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zweb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zel.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zkmax.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zkbind.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zcommon.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zkplus.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

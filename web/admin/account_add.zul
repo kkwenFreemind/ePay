@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+
+
+
+<window id="account_add_Window" title="新增帳號" border="normal" use="com.apt.epay.ui.admin.Account_add_Window" >
+<!--       
+    Style="padding:12px; background-color: #FF8C00"
+        contentStyle="background:#FFDAB9">
+-->
+
+    <grid width="100%">
+        <rows>
+            <row>
+                帳號ID:
+                <textbox id="text_user_code"/>
+            </row>
+            <row>
+                姓名:
+                <textbox id="text_user_name" />
+            </row>
+            <row>
+                Email:
+                <textbox id="text_email" />
+            </row>
+            <row>
+                手機號碼:
+                <textbox id="text_mobile"/>
+            </row>
+            <row>
+                密碼:
+                <textbox id="password" type="password"  maxlength="10"/>
+
+            </row>
+            <row>
+                權限角色
+                <radiogroup id="role_group" >
+                </radiogroup>
+            </row>
+            <row>
+                <hbox>
+                    <button label="新增" onClick="account_add_Window.addAccount()" />
+                    <button label="清除" onClick="account_add_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+</window>

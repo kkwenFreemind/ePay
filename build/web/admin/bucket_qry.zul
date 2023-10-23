@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="Bucket_qry_Window" title="新增服務" border="normal" use="com.apt.epay.ui.admin.Bucket_qry_Window" >
+
+    <grid width="100%">
+        <rows>
+
+            <row>
+                服務代碼(serviceID):
+                        <combobox id="combo_serviceid">
+                            <comboitem id="combo*" label="*"/>
+                        </combobox>
+            </row>            
+
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="Bucket_qry_Window.doQuery()" />
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+    <separator bar="true"/>
+    <listbox id="listbox_bucketinfo_log"  mold="paging" pageSize="20" multiple="true">
+        <listhead sizable="true">
+            <listheader label="帳本代碼(BucketID)"  sort="auto"/>
+            <listheader label="REF"  sort="auto"/>
+            <listheader label="單位價格(Amount)"  sort="auto"/>
+            <listheader label="帳本說明"  sort="auto"/>
+        </listhead>
+    </listbox>
+    <separator/>        
+</window>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="tx_log_batchfile_query" title="批次儲值記錄查詢" border="normal"  use="com.apt.epay.ui.admin.Tx_log_batchfile_query_Window" >
+    <zscript><![CDATA[ 
+
+    ]]>
+    </zscript>
+    <grid width="100%">
+        <rows>
+            <row>
+                批次檔案:(不用加副檔名)
+                <hbox>
+                    <textbox id="textbox_batchfile"/>
+                </hbox>
+            </row>           
+            <row>
+                結果統計:
+                <hbox>
+                    <label id="label_result"/>
+                </hbox>
+            </row>                 
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="tx_log_batchfile_query.doQuery()"  />
+                    <button label="清除" onClick="tx_log_batchfile_query.onClear()" />
+                    <button label="匯出" onClick="tx_log_batchfile_query.onExport()" />
+                </hbox>
+            </row>
+        </rows>
+    </grid>
+    <separator bar="true"/>
+    <listbox id="listbox_tx_log"  mold="paging" pageSize="20" multiple="true">
+        <listhead sizable="true">
+            <listheader label="交易序號"  sort="auto"/>
+            <listheader label="交易日期"  sort="auto"/>
+            <listheader label="儲值方案"  sort="auto"/>
+            <listheader label="儲值門號"  sort="auto"/>
+            <listheader label="儲值結果" sort="auto"/>
+            <listheader label="ErrorDesc" sort="auto"/>
+            <listheader label="儲值方式" sort="auto"/>               
+            <listheader label="儲值系統" sort="auto"/>  
+ 
+        </listhead>
+    </listbox>
+    <separator/>
+</window>

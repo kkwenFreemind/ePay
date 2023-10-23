@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="DTOne_ServiceInfo_profile_Window" title="修改服務資料" border="normal" use="com.apt.epay.ui.admin.DTOne_ServiceInfo_profile_Window">
+
+
+    <grid width="100%">
+        <rows>
+            <row>
+                服務代碼(serviceID):
+                <textbox id="text_serviceid"/>
+            </row>
+            <row>
+                服務名稱(serviceName):
+                <textbox id="text_servicename" />
+            </row>
+            <row>
+                服務說明(Note)
+                <textbox id="text_note" width="450px"/>
+            </row>        
+            <row>
+                啟停
+                <radiogroup id="grp_flag" >              
+                    <radio label="啟用" id="radio_flag_yes" value="1" />
+                    <radio label="停用" id="radio_flag_no" value="0" />
+                </radiogroup>             
+            </row>          
+            <row>
+                價格(Price):
+                <textbox id="text_price" />
+            </row>
+            <row>
+                OperatorName
+                <textbox id="text_operator_name"/>
+            </row>   
+            <row>
+                DTOne PriceID
+                <textbox id="text_priceId" />
+            </row>                             
+            <row>
+                PP PromotionCode
+                <textbox id="text_promotioncode" width="800px"/>
+            </row>      
+        </rows>
+    </grid>
+
+    <separator/>
+    <div align="center">
+        <hbox>
+            <button label="修改" onClick="DTOne_ServiceInfo_profile_Window.onModify()" />
+            <button label="返回"  href="main.zul" />
+
+        </hbox>
+    </div>
+</window>

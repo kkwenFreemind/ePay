@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="CheckSerialNumber_Window" title="序號確認" border="normal" use="com.apt.epay.ui.admin.CheckSerialNumber_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                序號:
+                <textbox id="text_serial_number" />
+            </row>
+
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="DownLoadSerialNumFile_Window.check()" />
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+</window>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="Func_mod_profile" title="變更" border="normal" use="com.apt.epay.ui.admin.Func_profile_Window">
+
+    <grid width="100%">
+        <rows>
+            <row>
+                FuncID:
+                <textbox id="text_func_id" readonly="true" />
+            </row>
+            <row>
+                功能群組名稱:
+                <textbox id="text_pname"/>
+            </row>
+            <row>
+                功能名稱:
+                <textbox id="text_fname"/>
+            </row>
+            <row>
+                URL:
+                <textbox id="text_url"/>
+            </row>
+        </rows>
+    </grid>
+    <separator/>
+    <div align="center">
+        <hbox>
+            <button label="確認" onClick="Func_mod_profile.onModify()" />
+        </hbox>
+    </div>
+</window>

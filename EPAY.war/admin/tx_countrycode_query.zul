@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="tx_countrycode_query" title="家鄉儲交易記錄查詢" border="normal"  use="com.apt.epay.ui.admin.Tx_countrycode_query_Window" >
+    <zscript><![CDATA[ 
+
+    ]]>
+    </zscript>
+    <grid width="100%">
+        <rows>
+            <row>
+                扣款門號(MDN):
+                <textbox id="text_mdn"/>
+            </row>            
+            <row>
+                交易日期起始時間:
+                <hbox>
+                    <datebox id="start_db"/>
+                    <timebox id="start_tb"/>
+                </hbox>
+            </row>
+            <row>
+                交易日期結束時間:
+                <hbox>
+                    <datebox id="end_db"/>
+                    <timebox id="end_tb"/>
+                </hbox>
+            </row>
+            <row>
+                儲值結果:
+                <hbox>
+                    <combobox id="cmbStatus" width="150px">
+                            <comboitem label="全部" />   
+                            <comboitem label="成功" />
+                            <comboitem label="失敗" />
+                    </combobox>
+                </hbox>
+            </row>            
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="tx_countrycode_query.doQuery()"  />
+                    <button label="清除" onClick="tx_countrycode_query.onClear()" />
+                    <button label="CSV匯出" onClick="tx_countrycode_query.doExport()" />
+                </hbox>
+            </row>
+        </rows>
+    </grid>
+    <separator bar="true"/>
+    
+    <listbox id="listbox_tx_log"  mold="paging" pageSize="20" multiple="true">
+        <listhead sizable="true">
+            <listheader label="交易序號(DTOne No)"  sort="auto"/>
+            <listheader label="交易序號(Series No)"  sort="auto"/>
+            <listheader label="交易日期(Date)"  sort="auto"/>
+            <listheader label="儲值方案(Promotion)"  sort="auto"/>
+            <listheader label="扣款門號(MDN)"  sort="auto"/>
+            <listheader label="扣款金額" sort="auto"/>
+            <listheader label="家鄉儲門號(oversea MDN)" sort="auto"/>               
+            <listheader label="OperatorName" sort="auto"/>    
+            <listheader label="PriceID" sort="auto"/>  
+            <listheader label="儲值結果(result)" sort="auto"/>  
+            <listheader label="實際扣款" sort="auto"/>   
+            <listheader label="ErrorDesc" sort="auto"/> 
+            <listheader label="國外儲值開始時間" sort="auto"/> 
+            <listheader label="PLN" sort="auto"/> 
+            <listheader label="PLN PIN" sort="auto"/> 
+            <listheader label="介面" sort="auto"/>           
+            <listheader label="OCS" sort="auto"/>  
+            <listheader label="wholesale" sort="auto"/>  
+        </listhead>
+    </listbox>
+    <separator/>
+</window>

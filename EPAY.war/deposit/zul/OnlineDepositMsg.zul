@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信CP金流" ?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+     <window border="normal" title="交易訊息"  apply="com.apt.epay.ui.OnlineDepositMsg_Window">
+         <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true"/>
+        <style src="/assets-cp/css/apt-cp.css"/>
+    </window>
+</zk>

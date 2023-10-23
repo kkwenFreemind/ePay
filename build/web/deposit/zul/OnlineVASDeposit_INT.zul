@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信虛擬卡片儲值" ?>
+<?meta content="text/html; charset=UTF-8" pageEncoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="OnlineVASDeposit_Window" title="虛擬卡片線上儲值" border="normal" use="com.apt.epay.ui.OnlineVASDeposit_Window">
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true"/>
+        <style src="/assets-cp/css/apt-cp.css"/>
+        <zscript><![CDATA[
+
+    ]]>
+        </zscript>
+
+        <separator/>
+        <auxhead>
+            <auxheader label=" " style="height:20px;"/>
+        </auxhead>
+        <div align="center" id="div_sms_conf">
+           
+            <groupbox width="70%">
+                <vbox>
+                    <separator spacing="5px"/>
+                    <hlayout>
+                        <image src="/img/icon_red.gif"/>
+                        儲值門號
+                        <textbox id="textbox_mdn" width="200px" disabled = "true"/>
+                    </hlayout>
+                    <hlayout>
+                        <image src="/img/icon_red.gif"/>
+                        儲值金額
+                        <combobox id="combo_serviceid">
+                            <comboitem id="combo*" label="*"/>
+                        </combobox>
+                        <button label="信用卡" id="sendVASCreditCardBtn" >
+                            <attribute name="onClick">
+                                OnlineVASDeposit_Window.sendCreditCardOrder();
+                            </attribute>
+                        </button>
+                        <button label="ATM" id="sendVASATMBtn" >
+                            <attribute name="onClick">
+                                OnlineVASDeposit_Window.sendATMOrder();
+                            </attribute>
+                        </button>
+                    </hlayout>
+                    <hlayout>
+                        <captcha id="cpa" length="5" width="130px" height="45px" exclude="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+                        <button label="重新產生"  onClick="cpa.randomValue();chkcode.setFocus(true);" tabindex="-1"/>
+                        <textbox id="chkcode"  width="200px" disabled = "false"/>
+                    </hlayout>                    
+                </vbox>
+            </groupbox>
+        </div>
+    </window>
+</zk>

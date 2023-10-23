@@ -1,0 +1,79 @@
+<html class="no-js" lang="zh-TW" xmlns:zk="zk" xmlns:z="zul">
+<head>
+<meta charset="UTF-8"></meta>
+<title>亞太電信</title>
+<style>
+	body{display:block; margin: 0;padding: 0;}
+	img{max-width:100%;height:auto;}
+	.content{display: block; width: 100%;margin: 0;padding: 0;font-family:"Micro#000000ft JhengHei","Helvetica Neue","Helvetica","Arial","sans-serif"}
+	.h1{display: block;width:100%;hieght:auto;margin: 0;}
+	.h2{display: block;width:90%;margin: 0 auto;text-align:center;padding: 0;font-size: 30pt;font-weight:bolder;margin-top: 20px;margin-bottom: 10px;}
+	.h3{display: block;width:90%;margin: 0 auto;text-align:center;padding: 0;font-size: 26pt; font-weight:normal;margin-bottom: 10px;}
+	.select{display:block; width: 80%;height: 100px;margin: 0 auto;margin-top: 30px;}
+	.selectinput{display: inline-block;width: 25px; height: 25px;margin:0 10px 70px 0;margin-left: 15px;padding:0 0 30px 0;vertical-align: middle;}
+	.selectbotton{display: inline-block; vertical-align: middle;}
+	.textsn{display: block;width:80%;margin: 0 auto;text-align:left;padding: 0 0 0 40px;border: 3px solid #b4b4b4;line-height: 100px; font-size: 40pt;font-weight:normal;margin-top: 20pt;border-radius: 50pt;}
+	.textbtn{display:block;width:30%;margin: 0 auto;text-align:center;padding: 30px 10px;color:#fff;background: #00763e;border: 0px;font-size: 25pt;font-weight:normal;margin-top: 30pt;border-radius: 30pt;margin-bottom: 30px;}
+        .textword{display:inline-flex;font-size: 46pt;width:80%;margin: 0 auto;height: 150px;text-align:center;margin-top: 40px}
+
+	.textsnKK{display: block;width:80%;margin: 0 auto;text-align:left;padding: 0 0 0 40px;border: 3px solid #b4b4b4;line-height: 100px; font-size: 40pt;font-weight:normal;margin-top: 20pt;border-radius: 0 50pt 50pt 0;}
+        .textsnCC{display: block;width:80%;margin: 0 auto;text-align:center;padding: 0 0 0 40px;border: 3px solid #b4b4b4;line-height: 100px; font-size: 40pt;font-weight:normal;margin-top: 20pt;border-radius: 50pt;}
+
+        .magin {display: inline-block;margin-bottom:0; padding:0;padding-left: 20px;vertical-align: bottom; }
+        .maginKK { background-image:url(OTP_check.jpg);background-repeat:no-repeat; width:20%; background-position:center; border: 0;  background-size: cover; }
+        .textsnshortKK{display: inline-block; line-height: 100px; font-size: 40pt;font-weight:normal;margin-top: 20pt;border: 3px solid #b4b4b4;border-radius: 50pt 0 0 50pt;padding: 0 30px;margin-top: 20pt;width: 20%;}
+	.textbtnKK{display:block;width:30%;text-align:center;padding: 30px 10px;border: 0px;font-size: 25pt;font-weight:normal;margin-top: 30pt;margin-bottom: 30px;}
+
+        .textsnshort{display: inline-block; line-height: 100px; font-size: 40pt;font-weight:normal;margin-top: 20pt;}
+        .newLabel{display: inline-block; font-size: 40pt;font-weight:normal;margin-top: 20pt;}
+	#content h4{display: block;width:90%;margin: 0 auto;text-align:center;padding: 0;font-size: 34pt; font-weight:bold;color: #646464;margin-top: 10pt;margin-bottom: 30px;}
+	#content h4 a {color: #646464;}
+
+        .footer {display:inline-block; position:fixed; bottom:0px;}
+	.maginbottom{display: block;margin:50px 0 0 0;}
+	#content h6{display: block; width:100%;margin:0;padding: 0; background: url("images/OTP_bottom.gif") bottom center ;}
+        .small-radio-image .z-radio-content img {
+            vertical-align: top;
+            width: 98px;
+            height: 98px;}
+
+
+@media (max-width: 1125px){
+}
+</style>
+
+</head>
+
+<body>
+
+    <z:window id="OnlineCountryCode_Err_Back" use="com.apt.epay.ui.dtone.OnlineCountryCode_Err_Back" border="none">
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true" />
+
+            <z:div align="center">
+
+                <h1 class="h1"><img src="OTP_title.gif" alt=""/></h1>
+
+                <h1 class="h1">很抱歉，您的服務申購失敗!</h1>
+                <h1 class="h1">Sorry,Your order has failed!</h1>
+                <h1 class="h1">Rất xin lỗi,  mua hàng thất bại!</h1>
+                <h1 class="h1">การสั่งซื้อล้มเหลว กรุณาติดต่อพนักงานบริการค่ะ</h1>
+                <h1 class="h1">Pemesanan gagal, silahkan hubungi layanan pelanggan</h1>
+
+                <h1 class="h1"><img src="OTP_shadow.gif" alt=""/></h1>
+
+                <z:button label="OK" class="textbtn" id="sendOKBtn">
+                    <attribute name="onClick">  
+                        OnlineCountryCode_Err_Back.sendOKBtn();
+                    </attribute>
+                </z:button>
+
+            </z:div>
+
+            <z:div class="footer"><img src="OTP_bottom.gif" alt=""/></z:div>
+    </z:window>
+
+</body>
+
+</html>
+
+

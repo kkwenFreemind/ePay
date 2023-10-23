@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="imsi_query_Window" title="CardID/IMSI Query" border="normal" use="com.apt.epay.ui.sct.imsi_query_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                CardId/IMSI:
+                <textbox id="text_imsi"  constraint="no empty,/^[0-9]{15,16}/: CardId/IMSI為數字"/>
+            </row>
+
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="imsi_query_Window.query_imsi()" />
+                    <button label="清除" onClick="imsi_query_Window.onClear()"/>
+                </hbox>
+            </row>
+            <row>
+                IMSI狀態:
+                <textbox id="text_status"/>
+            </row>      
+        </rows>
+    </grid>
+    <separator bar="true"/>
+    <listbox id="listbox_imsi_log"  mold="paging" pageSize="20" multiple="true">
+        <listhead sizable="true">
+            <listheader label="資費名稱"  sort="auto"/>
+            <listheader label="服務天數" sort="auto"/>            
+            <listheader label="門號狀態"  sort="auto"/>
+            <listheader label="資費可使用數據量(MB)"  sort="auto"/>
+            <listheader label="累積使用量(MB)" sort="auto"/>
+            <listheader label="今日使用量(MB)" sort="auto"/>
+            <listheader label="啟用日" sort="auto"/>            
+            <listheader label="到期日" sort="auto"/>
+            <listheader label="Country" sort="auto"/>
+        </listhead>
+    </listbox>
+    <separator/>
+</window>

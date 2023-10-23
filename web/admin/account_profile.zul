@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="Account_mod_profile" title="變更" border="normal" use="com.apt.epay.ui.admin.Account_profile_Window">
+
+    <grid width="100%">
+        <rows>
+            <row>
+                帳號ID:
+                <textbox id="text_user_code" readonly="true" />
+            </row>
+            <row>
+                姓名:
+                <textbox id="text_user_name"/>
+            </row>
+            <row>
+                Email:
+                <textbox id="text_email"/>
+            </row>
+            <row>
+                手機號碼:
+                <textbox id="text_mobile"/>
+            </row>
+            <row>
+                密碼:
+                <textbox id="password" type="password"  maxlength="10"/>
+
+            </row>
+            <row>
+                權限角色
+                <radiogroup id="role_group" >
+                </radiogroup>
+            </row>
+        </rows>
+    </grid>
+    <separator/>
+    <div align="center">
+        <hbox>
+            <button label="確認" onClick="Account_mod_profile.onModify()" />
+            <button label="取消" onClick="Account_mod_profile.onCancel()" />
+        </hbox>
+    </div>
+</window>

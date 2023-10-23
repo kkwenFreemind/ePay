@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p" xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+    <!--OnlineDeposit-->
+    <bean id="epay_sctcardDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+             <value>java:global/EPAY/MD_SR_MAINDAOBean!com.etms.ejb.dao.MD_SR_MAINDAO</value>
+        </property>
+    </bean>   
+    <bean id="epay_transactionDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_TRANSACTIONDAOBean!com.epay.ejb.EPAY_TRANSACTIONDAO</value>
+        </property>
+    </bean>
+    <bean id="epay_invoiceDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_INVOICEDAOBean!com.epay.ejb.EPAY_INVOICEDAO</value>
+        </property>
+    </bean>
+    <bean id="epay_vcardDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_VCARDDAOBean!com.epay.ejb.EPAY_VCARDDAO</value>
+        </property>
+    </bean>
+    <bean id="epay_vcardtypeDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_VCARDTYPEDAOBean!com.epay.ejb.EPAY_VCARDTYPEDAO</value>
+        </property>
+    </bean>    
+    <bean id="epay_invoice_itemDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_INVOICE_ITEMDAOBean!com.epay.ejb.EPAY_INVOICE_ITEMDAO</value>
+        </property>
+    </bean>
+    <bean id="epay_cpInfoDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_CP_INFODAOBean!com.epay.ejb.EPAY_CP_INFODAO</value>
+        </property>
+    </bean>
+    <bean id="epay_callerDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_CALLERDAOBean!com.epay.ejb.EPAY_CALLERDAO</value>
+        </property>
+    </bean>
+ 
+    <bean id="epay_serviceInfoDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_SERVICE_INFODAOBean!com.epay.ejb.EPAY_SERVICE_INFODAO</value>
+        </property>
+    </bean>
+    
+    <bean id="epay_dtoneserviceInfoDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_DTONESERVICE_INFODAOBean!com.epay.ejb.EPAY_DTONESERVICE_INFODAO</value>
+        </property>
+    </bean>
+    
+    <bean id="epay_common_userDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_COMMON_USERDAOBean!com.epay.ejb.EPAY_COMMON_USERDAO</value>
+        </property>
+    </bean>
+    
+    <bean id="epay_sys_functionDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_SYS_FUNCTIONSDAOBean!com.epay.ejb.EPAY_SYS_FUNCTIONSDAO</value>
+        </property>
+    </bean>
+    
+    <bean id="epay_sys_rolefuncsDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_SYS_ROLEFUNCSDAOBean!com.epay.ejb.EPAY_SYS_ROLEFUNCSDAO</value>
+        </property>
+    </bean> 
+    
+    <bean id="epay_sys_rolesDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_SYS_ROLESDAOBean!com.epay.ejb.EPAY_SYS_ROLESDAO</value>
+        </property>
+    </bean>          
+    
+    <bean id="epay_bucketDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_BUCKETDAOBean!com.epay.ejb.EPAY_BUCKETDAO</value>
+        </property>
+    </bean>       
+    
+    <bean id="epay_buckethistoryDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_BUCKETHISTORYDAOBean!com.epay.ejb.EPAY_BUCKETHISTORYDAO</value>
+        </property>
+    </bean>                      
+    <bean id="epay_iptablesDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_IP_TABLESDAOBean!com.epay.ejb.EPAY_IP_TABLESDAO</value>
+        </property>
+    </bean> 
+    <bean id="epay_promotioncodeDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_PROMOTIONCODEDAOBean!com.epay.ejb.EPAY_PROMOTIONCODEDAO</value>
+        </property>
+    </bean>  
+    <bean id="epay_dealercardDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_DEALERCARDDAOBean!com.epay.ejb.EPAY_DEALERCARDDAO</value>
+        </property>
+    </bean>    
+    <bean id="epay_dealermdnDAO" class="com.apt.epay.injector.impl.InjectorEJBDAOImpl">
+        <property name="lookupKeys">
+            <value>java:global/EPAY/EPAY_DEALERMDNDAOBean!com.epay.ejb.EPAY_DEALERMDNDAO</value>
+        </property>
+    </bean>                         
+                           
+    <bean id="epaybusinesscontroller" class="com.apt.epay.controller.impl.EPayBusinessConreollerImpl">
+        <!--OnlineDeposit-->
+        <property name="epay_sctcardDAO">
+            <ref bean="epay_sctcardDAO"/>
+        </property>        
+        <property name="epay_transactionDAO">
+            <ref bean="epay_transactionDAO"/>
+        </property>
+        <property name="epay_invoiceDAO">
+            <ref bean="epay_invoiceDAO"/>
+        </property>
+        <property name="epay_invoice_itemDAO">
+            <ref bean="epay_invoice_itemDAO"/>
+        </property>
+        <property name="epay_cpInfoDAO">
+            <ref bean="epay_cpInfoDAO"/>
+        </property>
+        <property name="epay_serviceInfoDAO">
+            <ref bean="epay_serviceInfoDAO"/>
+        </property>
+        <property name="epay_dtoneserviceInfoDAO">
+            <ref bean="epay_dtoneserviceInfoDAO"/>
+        </property>        
+        <property name="epay_callerDAO">
+            <ref bean="epay_callerDAO"/>
+        </property>
+        <property name="epay_common_userDAO">
+            <ref bean="epay_common_userDAO"/>
+        </property>
+        <property name="epay_sys_functionDAO">
+            <ref bean="epay_sys_functionDAO"/>
+        </property>   
+        <property name="epay_sys_rolefuncsDAO">
+            <ref bean="epay_sys_rolefuncsDAO"/>
+        </property>    
+        <property name="epay_sys_rolesDAO">
+            <ref bean="epay_sys_rolesDAO"/>
+        </property>         
+        <property name="epay_bucketDAO">
+            <ref bean="epay_bucketDAO"/>
+        </property>   
+        <property name="epay_buckethistoryDAO">
+            <ref bean="epay_buckethistoryDAO"/>
+        </property>      
+        <property name="epay_vcardDAO">
+            <ref bean="epay_vcardDAO"/>
+        </property>    
+        <property name="epay_vcardtypeDAO">
+            <ref bean="epay_vcardtypeDAO"/>
+        </property>     
+        <property name="epay_iptablesDAO">
+            <ref bean="epay_iptablesDAO"/>
+        </property>    
+        <property name="epay_promotioncodeDAO">
+            <ref bean="epay_promotioncodeDAO"/>
+        </property>    
+        <property name="epay_dealercardDAO">
+            <ref bean="epay_dealercardDAO"/>
+        </property>      
+        <property name="epay_dealermdnDAO">
+            <ref bean="epay_dealermdnDAO"/>
+        </property>                                                              
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass">
+            <value>org.springframework.web.servlet.view.JstlView</value>
+        </property>
+        <property name="prefix">
+            <value>/jsp/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
+    <bean id="paraMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+        <property name="paramName">
+            <value>action</value>
+        </property>
+        <property name="defaultMethodName">
+            <value>display</value>
+        </property>
+    </bean>
+</beans>

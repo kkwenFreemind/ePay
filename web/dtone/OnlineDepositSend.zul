@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <window>
+        <div xmlns:h="http://www.w3.org/1999/xhtml" >
+            <h:form name="info" method="POST" action="${sessionScope.sendURL}">
+                <!--<h:form name="info" method="POST" action="${sessionScope.sendURL}" >-->
+                <h:input type="hidden" name="cpid" value="${sessionScope.cpid}" />
+                <h:input type="hidden" name="data" value="${sessionScope.data}" />
+                <h:input type="hidden" name="apt_mdn" value="${sessionScope.apt_mdn}" />
+                <h:input type="hidden" name="dtone_mdn" value="${sessionScope.dtone_mdn}" />
+                <h:input type="hidden" name="dt_operator_name" value="${sessionScope.dt_operator_name}" />
+            </h:form>
+      
+            <h:script> 
+                document.info.setAttribute("method", "POST");
+                document.info.submit(); 
+            </h:script> 
+        </div>
+    </window>
+</zk>

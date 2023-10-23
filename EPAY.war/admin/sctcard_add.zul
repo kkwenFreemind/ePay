@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="SCTCard_add_Window" title="新增ICCID設定" border="normal" use="com.apt.epay.ui.admin.SCTCard_add_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                CardName:
+                <textbox id="text_cardname" constraint="no empty"/>
+            </row>
+            <row>
+                ICCID開始
+                <textbox id="text_iccid_start" constraint="no empty"/>
+            </row>
+            <row>
+                ICCID開始:
+                <textbox id="text_iccid_end" constraint="no empty"/>
+            </row>      
+            <row>
+                供應商:
+                <textbox id="text_support"/>
+            </row>  
+            <row>
+                APN:
+                <textbox id="text_apn" constraint="no empty"/>
+            </row>  
+            <row>
+                PIN / PUK:
+                <textbox id="text_pin"/>
+            </row>                                                            
+            <row>
+                備註:
+                <textbox id="text_memo"/>
+            </row>                                                 
+            <row>
+                <hbox>
+                    <button label="新增" onClick="SCTCard_add_Window.Add()" />
+                    <button label="清除" onClick="SCTCard_add_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+</window>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="Role_add_Window" title="新增角色" border="normal" use="com.apt.epay.ui.admin.Role_add_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                角色ID:
+                <textbox id="text_user_code"/>
+            </row>
+            <row>
+                角色名稱:
+                <textbox id="text_role_name" />
+            </row>
+
+            <row>
+                <hbox>
+                    <button label="新增" onClick="Role_add_Window.addRole()" />
+                    <button label="清除" onClick="Role_add_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+</window>

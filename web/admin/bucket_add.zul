@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="Bucket_add_Window" title="新增帳本" border="normal" use="com.apt.epay.ui.admin.Bucket_add_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                服務代碼(serviceID):
+                        <combobox id="combo_serviceid">
+                            <comboitem id="combo*" label="*"/>
+                        </combobox>
+            </row>
+            <row>
+                帳本代碼(BucketID):
+                        <combobox id="combo_bucketid">
+                            <comboitem label="*"/>
+                        </combobox>                
+            </row>
+            <row>
+                REF:
+                <textbox id="text_ref"/>
+            </row>            
+            <row>
+                單位價格(Amount):
+                <textbox id="text_amount"/>
+            </row>
+            <row>
+                帳本說明
+                <textbox id="text_note"/>
+            </row>
+            <row>
+                <hbox>
+                    <button label="新增" onClick="Bucket_add_Window.Add()" />
+                    <button label="清除" onClick="Bucket_add_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+</window>

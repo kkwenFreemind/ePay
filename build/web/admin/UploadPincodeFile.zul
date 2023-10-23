@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="EPAY" ?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<window id="UploadPincodeFile_Window" title="儲值卡檔案上傳" border="normal" apply="com.apt.epay.ui.admin.PincodeFileUpload_Composer" >
+    
+     <grid width="100%">
+        <rows>
+            <row>
+                CardType:
+                        <combobox id="combo_cardtype">
+                            <comboitem id="combo*" label="*"/>
+                        </combobox>
+            </row>
+            <row>
+                cardtype:
+                <textbox id="text_cardtype" readonly="true"/>
+            </row>    
+            <row>
+                cardname:
+                <textbox id="text_cardname" readonly="true"/>
+            </row>    
+            <row>
+                price:
+                <textbox id="text_price" readonly="true"/>
+            </row>  
+            <row>
+                quantity
+                <textbox id="text_quantity" readonly="true"/>
+            </row>   
+            <row>
+                lowthreshold
+                <textbox id="text_lowthreshold" readonly="true"/>
+            </row>    
+            <row>
+                status
+                <textbox id="text_status" readonly="true"/>
+            </row>                                                                
+        </rows>
+    </grid>
+    <zscript><![CDATA[
+
+    ]]>
+    </zscript>
+     <fileupload id="fileupload_pincode_file"  label="上傳檔案" />
+</window>

@@ -1,0 +1,50 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EPAY</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+ <div><a href="http://10.31.80.210:8080/EPAY/admin/login.zul">Admin</a></div>      
+
+
+  <div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_SMSDeposit.zhtml">SMS測試</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://10.31.80.210:8080/EPAY/deposit/OnlinePinCodeDeposit.zhtml">實體儲值卡儲值(Pincode)</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://10.31.80.210:8080/EPAY/deposit/OnlineBasicInfoDeposit.zhtml">儲值基本資料查詢(3G/4G)</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://10.31.80.210:8080/EPAY/deposit/OnlineTransQuery.zhtml">線上儲值記錄查詢(3G/4G)</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://10.31.80.210:8080/EPAY/deposit/OnlineVASDeposit.zhtml">虛擬儲值卡儲值</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://10.31.80.210:8080/EPAY/deposit/OnlineAdjustAccountDeposit.zhtml">餘額抵扣</a></div>
+
+
+
+        <div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlinePinCodeDeposit.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=QVBUQ01TJk1ETj0wOTA2MDQ0MDI1JlNUT1JFX0lEPTcwNzcxMjM1JlNBTEVTX0lEPTA5NjAwMzMzJlNSQ19JRD0xJklOVk9JQ0VfTk89QTEyMzQ1Njc4OTAmVElNRVNUQU1QPTIwMTUwODE3MTcwMDAwJk9DQ0hFQ0tQT0lORz1G">客服儲值卡儲值(Pincode)(Flag)</a></div>
+
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlinePinCodeDeposit.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=QVBUQ01TJk1ETj0wOTA2NDAyMDI1JlNUT1JFX0lEPTcwNzcxMjM1JlNBTEVTX0lEPTA5NjAwMzMzJlNSQ19JRD0xJklOVk9JQ0VfTk89QTEyMzQ1Njc4OTAmVElNRVNUQU1QPTIwMTUwOTA4MTcwMDAw">客服儲值卡儲值(Pincode)(No Flag)</a></div>
+
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlineTransQuery.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=QVBUQ01TJk1ETj0wOTA2NDAyMDI1JlNUT1JFX0lEPTcwNzcxMjM1JlNBTEVTX0lEPTA5NjAwMzMzJlNSQ19JRD0xJklOVk9JQ0VfTk89QTEyMzQ1Njc4OTAmVElNRVNUQU1QPQ==">客服儲值紀錄查詢(Flag)</a></div>
+
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlineTransQuery.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=QVBUQ01TJk1ETj0wOTA2NDAyMDI1JlNUT1JFX0lEPTcwNzcxMjM1JlNBTEVTX0lEPTA5NjAwMzMzJlNSQ19JRD0xJklOVk9JQ0VfTk89QTEyMzQ1Njc4OTAmVElNRVNUQU1QPTIwMTUwODE3MTcwMDAw">客服儲值紀錄查詢(No Flag)</a></div>  
+
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlineAdjustAccountDeposit.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=QVBUQ01TJk1ETj0wOTA2NDAyMDI1JlNUT1JFX0lEPTcwNzcxMjM1JlNBTEVTX0lEPTA5NjAwMzMzJlNSQ19JRD0xJklOVk9JQ0VfTk89QTEyMzQ1Njc4OTAmVElNRVNUQU1QPTIwMTUwODE3MTcwMDAwJk9DQ0hFQ0tQT0lORz1G">客服餘額抵扣(Flag)</a></div>
+
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlineVASDeposit.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=TUROPTA5MDY0MDIwMjUmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAw">客服網路儲值(No Flag)</a></div>
+
+		<!--
+        <div><a href="https://auth.aptg.com.tw:/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlinePinCodeDeposit.zhtml">實體儲值卡儲值(Pincode)</a></div>
+        <div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineBasicInfoDeposit.zhtml">儲值基本資料查詢(3G/4G)</a></div>
+        <div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineTransQuery.zhtml">線上儲值記錄查詢(3G/4G)</a></div>
+        <div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineVASDeposit.zhtml">虛擬儲值卡儲值</a></div>
+        <div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineAdjustAccountDeposit.zhtml">餘額抵扣</a></div>
+        <div><a href="http://210.200.69.45/EPAY/cms/CMS_OnlinePinCodeDeposit.zhtml?PKEY=1122334455&encryptResponseMsg=QVBUQ01TJk1ETj0wOTA2MDQ0MDI1JlNUT1JFX0lEPTcwNzcxMjM1JlNBTEVTX0lEPTA5NjAwMzMzJlNSQ19JRD0xJklOVk9JQ0VfTk89QTEyMzQ1Njc4OTAmVElNRVNUQU1QPTIwMTUwODE3MTcwMCZPQ0NIRUNLUE9JTkc9Rg==">客服儲值卡儲值(Pincode)</a></div>
+
+        <div><a href="http://210.200.69.45/EPAY/cms/CMS_OnlinePinCodeDeposit.zhtml?PKEY=1122334455&encryptResponseMsg=TUROPTA5MDY0NDEwOTAmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAw">客服儲值卡儲值(Pincode)</a></div>
+
+<div><a href="http://210.200.69.45/EPAY/cms/CMS_OnlineTransQuery.zhtml?PKEY=1122334455&encryptResponseMsg=TUROPTA5MDY0NDEwOTAmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAw">客服儲值紀錄查詢</a></div>  
+-->      
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <window>
+        <div xmlns:h="http://www.w3.org/1999/xhtml" >
+            <h:form name="info" method="POST" action="${sessionScope.sendURL}">
+                <!--<h:form name="info" method="POST" action="${sessionScope.sendURL}" >-->
+                <h:input type="hidden" name="CPID" value="${sessionScope.cpid}" />
+                <h:input type="hidden" name="DATA" value="${sessionScope.data}" />
+            </h:form>
+      
+            <h:script> 
+                document.info.setAttribute("method", "POST");
+                document.info.submit(); 
+            </h:script> 
+        </div>
+    </window>
+</zk>

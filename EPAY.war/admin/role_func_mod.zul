@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="role_func_mod" title="修改後台功能" border="normal" use="com.apt.epay.ui.admin.Role_Func_mod_Window">
+
+    <grid width="100%">
+    </grid>
+    <separator spacing="5px"  bar="true"/>
+
+    <separator bar="true"/>
+    <listbox id="list_func" width="100%" mold="paging" pageSize="10" multiple="false"  onSelect="role_func_mod.onSelect()">
+        <listhead>
+            <listheader label="角色ID"/>            
+            <listheader label="功能ID"/>
+        </listhead>
+    </listbox>
+</window>

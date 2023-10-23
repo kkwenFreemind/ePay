@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<?meta content="text/html; charset=UTF-8" pageEncoding="UTF-8"?>
+<zk>
+	<window id="window" apply="com.apt.epay.ui.admin.ChannelPincodeFileUpload" title="批次儲值卡儲值" border="normal">
+	<fileupload id="fileupload" />
+        <div>
+            <label value="檔案格式 4GPP_recharge_YYYYMMDD_username_序號_筆數.csv" />
+        </div>
+        <div>
+            <label value="ex: 4GPP_recharge_20191106_channel_01_1000.csv" />
+        </div>
+	</window>
+</zk>

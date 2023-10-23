@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<?meta content="text/html; charset=UTF-8" pageEncoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="Adm_OnlineBasicInfoDeposit_Window" use="com.apt.epay.ui.admin.Adm_OnlineBasicInfoDeposit_Window" border="none">
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true"/>
+
+        <groupbox width="70%">
+            <vbox>
+                <separator spacing="5px"/>
+
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="門號" id="txt_mdn"/>
+                    <textbox id="textbox_mdn" width="200px"/>
+                </hlayout>    
+                
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="SOA門號生效日期" id="txt_contractId" />
+                    <label id="textbox_contractId" width="200px"/>
+                </hlayout> 
+                
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="OCS門號更新狀態日期(帳本1的updatedate)" id="txt_updatedate" />
+                    <label id="textbox_updatedate" width="200px"/>
+                </hlayout>                 
+                
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="服務類型" id="txt_servicename" />
+                    <label id="textbox_servicename" width="200px"/>
+                </hlayout> 
+
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="SOA合約狀態" id="txt_contract_status" />
+                    <label id="textbox_contract_status" width="200px"/>
+                </hlayout>    
+                                    
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="門號有效截止日" id="txt_contract_expire" />
+                    <label id="textbox_contract_expire" width="200px"/>
+                </hlayout>    
+
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="基本通信費(元)" id="txt_tel_balance" />
+                    <label id="textbox_tel_balance" width="80px"/>
+                </hlayout>  
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="贈送通信費(元)" id="txt_tel_add_balance" />
+                    <label id="textbox_tel_add_balance"/>
+                </hlayout>  
+                    
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="數據上網基本量(MB)" id ="textbox_data_balance_id" />  
+                    <label id="textbox_data_balance"/>
+                </hlayout>  
+
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="服務使用到期日" id ="textbox_data_expire_id" /> 
+                    <label id="textbox_data_expire"/>
+                </hlayout> 
+                
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="數據上網贈送量(MB)" id ="textbox_data_add_balance_id" />
+                    <label id="textbox_data_add_balance"/>
+                </hlayout>                
+
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="服務使用到期日" id ="textbox_data_add_expire_id" />
+                    <label id="textbox_data_add_expire"/>
+                </hlayout>  
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="網內免費通話金額(元)" id ="textbox_onnet_balance_id" />
+                    <label id="textbox_onnet_balance"/>
+                </hlayout>  
+
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="服務使用到期日" id ="textbox_onnet_expire_id" />          
+                    <label id="textbox_onnet_expire"/>
+                </hlayout>  
+                
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="30天免費網內語音" id ="textbox_onnetx_balance_id" />
+                    <label value="服務使用到期日" id ="textbox_onnetx_balance_expired_id" />
+                    <label id="textbox_onnetx_expire"/>
+                </hlayout>  
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="計日型數據服務使用到期日" id ="textbox_710_balance_id" />          
+                    <label id="textbox_710_expire_id"/>
+
+                </hlayout>  
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="計日型帳本(輕量型)服務使用到期日" id ="textbox_770_balance_id" />          
+                    <label id="textbox_770_expire_id"/>
+                </hlayout>                  
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label value="OCS合約狀態" id ="textbox_ocs_balance_id" />          
+                    <label id="textbox_ocs_cintractstatus"/>
+
+                </hlayout>                  
+ 
+                <hlayout>
+                    <image src="/img/icon_red.gif"/>
+                    <label  value="合約正常:9 掛停:25 掛限:27 強停:26" />    
+                    <label  value="正本未回限話:31 到期雙停:43 合約終止:12" />        
+
+                </hlayout>   
+
+
+            </vbox>
+
+        </groupbox>
+
+
+            
+        <div align="center">
+            <button label="查詢" id="BackBtn">
+                <attribute name="onClick">
+                    Adm_OnlineBasicInfoDeposit_Window.Mdn_Query();
+                </attribute>
+            </button>
+        </div>
+     
+    </window>
+    
+
+
+</zk>

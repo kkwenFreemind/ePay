@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="DTOne_ServiceInfo_add_Window" title="新增服務" border="normal" use="com.apt.epay.ui.admin.DTOne_ServiceInfo_add_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                服務代碼(serviceID):
+                <textbox id="text_serviceid"/>
+            </row>
+            <row>
+                服務名稱(serviceName):
+                <textbox id="text_servicename" />
+            </row>
+            <row>
+                服務說明(Note)
+                <textbox id="text_note"/>
+            </row>            
+            <row>
+                價格(Price):
+                <textbox id="text_price" />
+            </row>
+            <row>
+                OperatorName
+                <textbox id="text_operator_name"/>
+            </row>   
+             <row>
+                DTOne PriceID
+                <textbox id="text_priceId" />
+            </row>                             
+            <row>
+                PP PromotionCode
+                <textbox id="text_promotioncode" width="450px"/>
+            </row>       
+            <row>
+                <hbox>
+                    <button label="新增" onClick="DTOne_ServiceInfo_add_Window.Add()" />
+                    <button label="清除" onClick="DTOne_ServiceInfo_add_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+</window>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="func_add_Window" title="新增功能設定" border="normal" use="com.apt.epay.ui.admin.Func_add_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                功能ID:
+                <textbox id="text_func_id"/>
+            </row>
+            <row>
+                主功能名稱:
+                <textbox id="text_func_pname" />
+            </row>
+            <row>
+                次功能名稱:
+                <textbox id="text_func_fname" />
+            </row>
+            <row>
+                功能頁面URL:
+                <textbox id="text_url"/>
+            </row>
+            <row>
+                <hbox>
+                    <button label="新增" onClick="func_add_Window.addFunc()" />
+                    <button label="清除" onClick="func_add_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+    <separator spacing="5px"  bar="true"/>
+
+    <separator bar="true"/>
+    <listbox id="list_func" width="100%" mold="paging" pageSize="10" multiple="false"  onSelect="Func_mod.onSelect()">
+        <listhead>
+            <listheader label="Func ID"/>
+            <listheader label="功能群組名稱"/>
+            <listheader label="功能名稱"/>
+            <listheader label="URL"/>
+        </listhead>
+    </listbox>    
+</window>

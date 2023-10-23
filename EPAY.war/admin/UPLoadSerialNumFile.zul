@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+
+<window id="UPLoadSerialNumFile_Window" title="SAP檔案上傳" border="normal" use="com.apt.epay.ui.admin.UPLoadSerialNumFile_Window" >
+
+
+    <zscript><![CDATA[
+
+    ]]>
+    </zscript>
+     <fileupload id="fileupload_pincode_file"  label="SAP檔案上傳" />
+</window>

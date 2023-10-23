@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="role_func_mod_profile" title="變更" border="normal" use="com.apt.epay.ui.admin.Role_Func_profile_Window">
+
+    <grid width="100%">
+        <rows>
+            <row>
+                角色ID:
+                <textbox id="text_role_code"  />
+            </row>
+            <row>
+                功能ID:
+                <textbox id="text_func_id"/>
+            </row>
+
+        </rows>
+    </grid>
+    <separator/>
+    <div align="center">
+        <hbox>
+            <button label="確認" onClick="role_func_mod_profile.onModify()" />
+        </hbox>
+    </div>
+</window>

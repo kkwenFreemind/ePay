@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="zkforge">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zkforge/timeplotz.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zkforge/flashchart.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zkforge/gmapsz.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zkforge/zuljsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/zkforge/timelinez.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="SCTCard_mod_Window" title="修改服務" border="normal" use="com.apt.epay.ui.admin.SCTCard_mod_Window">
+
+    <separator spacing="5px"  bar="true"/>
+
+    <separator bar="true"/>
+    <listbox id="list_sctcard" width="100%" mold="paging" pageSize="10" multiple="false"  onSelect="SCTCard_mod_Window.onSelect()">
+        <listhead>
+            <listheader label="Id"  sort="auto"/>
+            <listheader label="CardName"  sort="auto"/>
+            <listheader label="ICCID Start"  sort="auto"/>
+            <listheader label="ICCID End" sort="auto"/>
+            <listheader label="供應商" sort="auto"/>
+            <listheader label="APN" sort="auto"/>
+            <listheader label="PIN/PUK" sort="auto"/>
+            <listheader label="備註" sort="auto"/>
+        </listhead>
+    </listbox>
+</window>

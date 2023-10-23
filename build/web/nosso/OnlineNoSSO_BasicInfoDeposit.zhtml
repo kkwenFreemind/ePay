@@ -1,0 +1,185 @@
+<html class="no-js" lang="zh-TW" xmlns:zk="zk" xmlns:z="zul">
+<head>
+    <title>亞太電信官方網站</title>
+
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+
+        <!-- 依螢幕尺寸呈現適合的畫面尺寸 start -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <!-- 依螢幕尺寸呈現適合的畫面尺寸 end -->
+
+    <style type="text/css">
+        *{font-family:微軟正黑體;box-sizing: border-box;}
+        body{margin:0px;}
+        td{padding:6px 4px; line-height: 95%;}
+        input{font-size:1em; max-width: 179px;}
+        a{text-decoration:none;}
+        .label{text-align:right; background:#f4f4f4;}
+        .multilang{color:#777777; font-size:0.8em;}
+        #imgCode{cursor: pointer;}
+
+        .small { font-size: 0.8em; color: #777777; }
+        .title { background: #f4f4f4; text-align: right; }
+        .col-25 { width: 25%; float: left; vertical-align: left; padding: 5px; }
+        .col-50 { width: 50%; float: left; vertical-align: left; padding: 5px; }
+        .col-75 { width: 75%; float: left; vertical-align: left; padding: 5px; }
+        .col-100 { width: 100%; float: left; vertical-align: left; padding: 5px; }
+        .item1, .item2, .item3, .item4 { float: left; width: 100%; overflow: hidden;  border-bottom: 1px solid grey; }
+        .item5, .item6, .item7, .item8 { overflow: hidden; clear: both; border-bottom: 1px solid grey; }        
+	
+        /*指定table裡td的字型,當螢幕寬度小於768時,字型變10px*/
+            @media only screen and (max-width: 768px) {
+                body { font-size: 12px; }
+                .item1, .item2, .item3, .item4 { float: initial; width: initial; overflow: hidden; }
+                .m-col-25 { width: 25%; }   
+                .m-col-75 { width: 75%; }
+                .m-col-100 { width: 100%; }
+                #btnPayment, #btnCancel { font-size: 14px; max-width: initial; width: initial; }
+            }
+	
+</style>
+</head>
+
+<body>
+
+<z:window id="OnlineNoSSO_BasicInfoDeposit_Window" use="com.apt.epay.ui.nosso.OnlineNoSSO_BasicInfoDeposit_Window" border="none">
+    <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true"/>
+
+    <z:div style="margin:20px;">
+
+        <z:div style="width: 100%;  margin: auto; border: 1px solid #1a1a1a; margin-bottom: 30px;">
+            <z:div style="background: #008236; color: #ffffff; padding: 3px 5px;">
+                亞太電信預付卡餘額查詢
+            </z:div>
+
+            <z:div class="item1">
+                <z:div class="col-25 title">儲值門號<z:div class="small">Mobile Number</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_mdn" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">服務類型<z:div class="small">ServiceName</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_servicename" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">門號有效截止日<z:div class="small">Contract Expired Date</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_contract_expire" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">基本通信費(元)<z:div class="small">Basic Tel </z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_tel_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">基本通信到期日<z:div class="small">Basic Communite ExpiredDate</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_tel_expire" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">贈送通信費(元)<z:div class="small">Free Communite</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_tel_add_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">贈送通信到期日<z:div class="small">Free Communite ExpireDate</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_tel_add_expire" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">數據上網基本量(MB)<z:div class="small">Basic Data</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_data_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">服務使用到期日<z:div class="small">Service ExpiredDate</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_data_expire" disabled = "true"/></z:div>
+            </z:div>
+
+
+            <z:div class="item2">
+                <z:div class="col-25 title">數據上網贈送量(MB)<z:div class="small">Free Data</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_data_add_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">服務使用到期日<z:div class="small">Service ExpiredDate</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_data_add_expire" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">網內免費通話金額(元)<z:div class="small">OnNet </z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_onnet_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">服務使用到期日<z:div class="small">Service ExpiredDate</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_onnet_expire" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">30天免費網內語音<z:div class="small">服務使用到期日</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_onnetx_expire" disabled = "true"/></z:div>
+            </z:div>
+
+
+            <z:div id="id710">
+            <z:div class="item2">
+                <z:div class="col-25 title">計日型數據<z:div class="small">DayType Data</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_710_balance_id" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">服務使用到期日<z:div class="small">Service ExpiredDate</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_710_expire_id" disabled = "true"/></z:div>
+            </z:div>
+
+
+
+
+            <z:div class="item2">
+                <z:div class="col-25 title">國際通信費基本(元)<z:div class="small"></z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_internet_voice_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">國際通信費贈送(元)<z:div class="small"></z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_internal_voice_free_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">5G計日型全速無限上網<z:div class="small"></z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_5GDataFUm_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">5G計日型全速上網到量降速21M<z:div class="small"></z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_5GDataF21MbLm_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">5G計日型全速上網到量降速21M<z:div class="small"></z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_5GDataF12MbLm_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div class="item2">
+                <z:div class="col-25 title">熱點分享數據量<z:div class="small"></z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_5GDataWiFi_balance" disabled = "true"/></z:div>
+            </z:div>
+
+            <z:div align="center">
+                “預付卡自開通及完成儲值設定日起三至六個月有效，特殊專案依其優惠內容，提供儲值展延有效期限”
+            </z:div>
+
+        </z:div>
+    </z:div>
+ </z:div>
+
+
+</z:window>
+
+</body>
+</html>
+

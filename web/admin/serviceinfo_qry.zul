@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="ServiceInfo_qry_Window" title="服務查詢" border="normal" use="com.apt.epay.ui.admin.ServiceInfo_qry_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                服務代碼(serviceID):
+                <textbox id="text_serviceid"/>
+            </row>
+
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="ServiceInfo_qry_Window.doQuery()" />
+                    <button label="清除" onClick="ServiceInfo_qry_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+    <separator bar="true"/>
+    <listbox id="listbox_serviceinfo_log"  mold="paging" pageSize="20" multiple="true">
+        <listhead sizable="true">
+            <listheader label="服務代碼(serviceID)"  sort="auto"/>
+            <listheader label="服務名稱(serviceName)"  sort="auto"/>
+            <listheader label="商店代碼(Glcode)"  sort="auto"/>
+            <listheader label="價格(Price)" sort="auto"/>
+            <listheader label="服務延展天數(day)" sort="auto"/>
+            <listheader label="服務說明" sort="auto"/>
+            <listheader label="啟停(1:0)" sort="auto"/>
+            <listheader label="CardType" sort="auto"/>
+        </listhead>
+    </listbox>
+    <separator/>    
+</window>

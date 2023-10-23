@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="VCardType_add_Window" title="新增服務" border="normal" use="com.apt.epay.ui.admin.VCardType_add_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                CardType:
+                <textbox id="text_cardtype"/>
+            </row>
+            <row>
+                CardName:
+                <textbox id="text_cardname" />
+            </row>
+            <row>
+                價格(Price):
+                <textbox id="text_price"/>
+            </row>
+            <row>
+                低水位:
+                <textbox id="text_lowthreshold"/>
+            </row>            
+            <row>
+                <hbox>
+                    <button label="新增" onClick="VCardType_add_Window.Add()" />
+                    <button label="清除" onClick="VCardType_add_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+</window>

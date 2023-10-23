@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="ServiceInfo_add_Window" title="新增服務" border="normal" use="com.apt.epay.ui.admin.ServiceInfo_add_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                服務代碼(serviceID):
+                <textbox id="text_serviceid"/>
+            </row>
+            <row>
+                服務名稱(serviceName):
+                <textbox id="text_servicename" />
+            </row>
+            <row>
+                商店代碼(Glcode):
+                <textbox id="text_glcode" />
+            </row>
+            <row>
+                價格(Price):
+                <textbox id="text_price"/>
+            </row>
+            <row>
+                狀態(Status):
+                <radiogroup id="grp_status" >
+                </radiogroup>    
+            </row>            
+            <row>
+                服務延展天數(day):
+                <textbox id="text_day"/>
+            </row>
+            <row>
+                服務說明
+                <textbox id="text_note"/>
+            </row>
+            <row>
+                服務啟停
+                <radiogroup id="grp_flag" >
+                </radiogroup>                
+            </row>    
+            <row>
+                CardType
+                <textbox id="text_cardtype" >
+                </textbox>                
+            </row>      
+            <row>
+                PlatformType(1:ALU 2:ZTE)
+                <textbox id="text_platformtype" >
+                </textbox>                
+            </row>    
+            <row>
+                PricePlanCode(ZTE Only)
+                <textbox id="text_priceplancode">
+                </textbox>                
+            </row>     
+            <row>
+                PromotionCode
+                <textbox id="text_promotioncode" width="450px">
+                </textbox>                
+            </row>       
+            <row>
+                OCSStatus
+                <textbox id="text_ocsstatus" width="450px">
+                </textbox>                
+            </row>       
+            <row>
+                CMSStatus
+                <textbox id="text_cmsstatus" width="450px">
+                </textbox>                
+            </row>                                                     
+            <row>
+                <hbox>
+                    <button label="新增" onClick="ServiceInfo_add_Window.Add()" />
+                    <button label="清除" onClick="ServiceInfo_add_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+</window>

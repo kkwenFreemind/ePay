@@ -1,0 +1,65 @@
+<html class="no-js" lang="zh-TW" xmlns:zk="zk" xmlns:z="zul">
+<head>
+    <title>亞太電信官方網站</title>
+
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+
+        <!-- 依螢幕尺寸呈現適合的畫面尺寸 start -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <!-- 依螢幕尺寸呈現適合的畫面尺寸 end -->
+
+    <style type="text/css">
+        *{font-family:微軟正黑體;box-sizing: border-box;}
+        body{margin:0px;}
+        td{padding:6px 4px; line-height: 95%;}
+        input{font-size:1em; width: 100%; max-width: 179px;}
+        a{text-decoration:none;}
+        .label{text-align:right; background:#f4f4f4;}
+        .multilang{color:#777777; font-size:0.8em;}
+        #imgCode{cursor: pointer;}
+
+        .small { font-size: 0.8em; color: #777777; }
+        .title { background: #f4f4f4; text-align: right; }
+        .col-25 { width: 25%; float: left; vertical-align: left; padding: 6px; }
+        .col-50 { width: 50%; float: left; vertical-align: left; padding: 6px; }
+        .col-75 { width: 75%; float: left; vertical-align: left; padding: 6px; }
+        .col-100 { width: 100%; float: left; vertical-align: left; padding: 6px; }
+        .item1, .item2, .item3, .item4 { float: left; width: 50%; overflow: hidden; border-bottom: 1px solid grey; }
+        .item5, .item6, .item7, .item8 { overflow: hidden; clear: both; border-bottom: 1px solid grey; }
+         
+	
+        /*指定table裡td的字型,當螢幕寬度小於768時,字型變10px*/
+            @media only screen and (max-width: 768px) {
+                body { font-size: 12px; }
+                .item1, .item2, .item3, .item4 { float: initial; width: initial; overflow: hidden; }
+                .m-col-25 { width: 25%; }   
+                .m-col-75 { width: 75%; }
+                .m-col-100 { width: 100%; }
+                #btnPayment, #btnCancel { font-size: 14px; max-width: initial; width: initial; }
+            }
+	
+</style>
+</head>
+
+<body>
+
+    <z:window id="OnlinePromotionCodeErrorMsg_Window" use="com.apt.epay.ui.OnlinePromotionCodeErrorMsg_Window" border="none">
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true" />
+
+            <z:div style="width: 100%; max-width: 759px; margin: auto; border: 1px solid #1a1a1a; margin-bottom: 30px;">
+            <z:div style="background: #008236; color: #ffffff; padding: 3px 5px;">
+		亞太電信預付卡儲值
+            </z:div>
+
+            <z:div align="center">
+                <z:label id ="PromotionCodeErrorMsgLabel"/>
+            </z:div>
+            </z:div>
+    </z:window>
+
+
+</body>
+
+</html>
+

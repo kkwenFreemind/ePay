@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信CP金流" ?>
+<?meta content="text/html; charset=UTF-8" pageEncoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window title="警告訊息" border="normal">
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true" />
+        <style src="/assets-cp/css/apt-cp.css"/>
+        <div>Access Denied</div>
+
+    </window>
+</zk>

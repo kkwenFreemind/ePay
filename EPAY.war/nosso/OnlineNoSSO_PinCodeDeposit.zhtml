@@ -1,0 +1,95 @@
+<html class="no-js" lang="zh-TW" xmlns:zk="zk" xmlns:z="zul">
+<head>
+    <title>亞太電信官方網站</title>
+
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+
+        <!-- 依螢幕尺寸呈現適合的畫面尺寸 start -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <!-- 依螢幕尺寸呈現適合的畫面尺寸 end -->
+
+    <style type="text/css">
+        *{font-family:微軟正黑體;box-sizing: border-box;}
+        body{margin:0px;}
+        td{padding:6px 4px; line-height: 95%;}
+        input{font-size:1em; max-width: 179px;}
+        a{text-decoration:none;}
+        .label{text-align:right; background:#f4f4f4;}
+        .multilang{color:#777777; font-size:0.8em;}
+        #imgCode{cursor: pointer;}
+
+        .small { font-size: 0.8em; color: #777777; }
+        .title { background: #f4f4f4; text-align: right; }
+        .col-25 { width: 25%; float: left; vertical-align: left; padding: 5px; }
+        .col-50 { width: 50%; float: left; vertical-align: left; padding: 5px; }
+        .col-75 { width: 75%; float: left; vertical-align: left; padding: 5px; }
+        .col-100 { width: 100%; float: left; vertical-align: left; padding: 5px; }
+        .item1, .item2, .item3, .item4 { float: left; width: 100%; overflow: hidden;  border-bottom: 1px solid grey; }
+        .item5, .item6, .item7, .item8 { overflow: hidden; clear: both; border-bottom: 1px solid grey; }        
+	
+        /*指定table裡td的字型,當螢幕寬度小於768時,字型變10px*/
+            @media only screen and (max-width: 768px) {
+                body { font-size: 12px; }
+                .item1, .item2, .item3, .item4 { float: initial; width: initial; overflow: hidden; }
+                .m-col-25 { width: 25%; }   
+                .m-col-75 { width: 75%; }
+                .m-col-100 { width: 100%; }
+                #btnPayment, #btnCancel { font-size: 14px; max-width: initial; width: initial; }
+            }
+	
+</style>
+</head>
+
+<body>
+
+<z:window id="OnlineNoSSOPinCodeDeposit_Window" use="com.apt.epay.ui.nosso.OnlineNoSSO_PinCodeDeposit_Window" border="none">
+    <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true"/>
+
+    <z:div style="margin:20px;">
+
+        <z:div style="width: 100%;  margin: auto; border: 1px solid #1a1a1a; margin-bottom: 30px;">
+            <z:div style="background: #008236; color: #ffffff; padding: 3px 5px;">
+                亞太電信預付卡儲值
+            </z:div>
+
+            <!--
+            <z:div class="item1">
+                <z:div class="col-25 title"><z:label id="label_contract"></z:label><z:div class="small">Mobile Number</z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_contract_mdn" disabled = "true"/></z:div>
+            </z:div>
+            -->
+
+            <z:div class="item1">
+                <z:div class="col-25 title"><z:label id="label_mdn"></z:label><z:div class="small"><z:label id="label_mdn_type"></z:label></z:div><z:div class="small"><z:label value="　"></z:label></z:div></z:div>
+                <z:div class="col-75"><z:textbox id="textbox_mdn"  maxlength="10" constraint="no empty,/^[0-9]{10}/: 門號需完整10碼數字" disabled = "false"/><z:label value="　"/><z:button label="品牌查詢" id="chkPromotionBtn" onClick="OnlineNoSSOPinCodeDeposit_Window.chkPromotionCode()"/></z:div>
+                <z:div>請再次確認您將儲值之4G預付卡門號，以免因輸入錯誤，無法使用。</z:div>
+            </z:div>
+
+            <z:div  class="item2">
+                <z:div class="col-25 title">儲值卡密碼<z:div class="small">Password</z:div></z:div>
+                    <z:div class="col-75"><z:textbox id="textbox_pincode" constraint="no empty,/^[0-9]{14,16}/: 需完整14或16碼數字"/></z:div>
+                </z:div>
+
+            <z:div  class="item3">
+                <z:div class="col-25 title">檢核碼<z:div class="small">Check Code</z:div></z:div>
+                <z:div class="col-75">
+                    <z:textbox id="chkcode" disabled = "false" />
+                    <z:captcha id="cpa" length="5" width="100px" height="30px" exclude="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" onClick="cpa.randomValue();chkcode.setFocus(true);" class="word_bottom" />
+                </z:div>
+            </z:div>
+
+            <z:div  align="center">
+                <z:button label="確定" id="sendPinCodeBtn" autodisable="self">
+                    <attribute name="onClick">  
+                        OnlineNoSSOPinCodeDeposit_Window.sendOrder();
+                    </attribute>
+                </z:button>
+            </z:div>
+        </z:div>
+    </z:div>
+</z:window>
+
+</body>
+</html>
+

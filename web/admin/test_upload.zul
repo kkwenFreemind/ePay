@@ -1,0 +1,5 @@
+<zk>
+	<window id="window" apply="com.apt.epay.ui.admin.FileUploader" title="new page title" border="normal">
+	<fileupload id="fileupload" />
+	</window>
+</zk>

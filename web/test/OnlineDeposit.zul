@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信CP金流" ?>
+<?meta content="text/html; charset=UTF-8" pageEncoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="OnlineCancelAuthDeposit_Window" title="線上儲值" border="normal" use="com.apt.epay.ui.OnlineCancelAuthDeposit_Window" >
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true" />
+        <style src="/assets-cp/css/apt-cp.css"/>
+        <zscript><![CDATA[
+
+    ]]>
+        </zscript>
+
+        <separator/>
+        <auxhead>
+            <auxheader label=" " style="height:20px;"/>
+        </auxhead>
+        <hlayout>
+            Libm
+            <textbox id="textbox_libm" width="200px"/>
+        </hlayout>
+        <div align="center">
+            <!--<button label="確認發送" id="sendBtn" onClick="OnlineDeposit_Window_1.sendOrder()" autodisable="self" >-->
+            <button label="取消授權" id="sendBtn" >
+                <attribute name="onClick">
+
+                    <!--Clients.showBusy(null); -->
+                    OnlineCancelAuthDeposit_Window.sendCreditCardOrder();
+                </attribute>
+            </button>
+        </div>
+        
+        <div align="center">
+            <!--<button label="確認發送" id="sendBtn" onClick="OnlineDeposit_Window_1.sendOrder()" autodisable="self" >-->
+            <button label="取消授權回覆測試" id="sendCancelBtn" >
+                <attribute name="onClick">
+
+                    <!--Clients.showBusy(null); -->
+                    OnlineCancelAuthDeposit_Window.sendCancelResp();
+                </attribute>
+            </button>
+        </div>        
+        
+    </window>
+</zk>

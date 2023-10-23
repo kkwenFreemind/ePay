@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="ServiceInfo_mod_Window" title="修改服務" border="normal" use="com.apt.epay.ui.admin.ServiceInfo_mod_Window">
+
+    <!--
+    <grid width="100%">
+        <rows>
+           <row>
+                服務代碼(serviceID):
+                <textbox id="text_serviceid"/>
+            </row>
+            <row>
+                服務名稱(serviceName):
+                <textbox id="text_servicename" />
+            </row>
+            <row>
+                商店代碼(Glcode):
+                <textbox id="text_glcode" />
+            </row>
+            <row>
+                價格(Price):
+                <textbox id="text_price"/>
+            </row>
+            <row>
+                狀態(Status):
+                <textbox id="text_status"/>
+            </row>            
+            <row>
+                服務延展天數(day):
+                <textbox id="text_day"/>
+            </row>
+            <row>
+                服務說明
+                <textbox id="text_note"/>
+            </row>
+            <row>
+                服務啟停
+                <textbox id="text_flag"/>
+            </row>            
+
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="ServiceInfo_mod_Window.onQuery()"/>
+                    <button label="清除" onClick="ServiceInfo_mod_Window.onClear()" />
+                </hbox>
+            </row>
+        </rows>
+    </grid>
+    -->
+    <separator spacing="5px"  bar="true"/>
+
+    <separator bar="true"/>
+    <listbox id="list_serviceinfox" width="100%" mold="paging" pageSize="10" multiple="false"  onSelect="ServiceInfo_mod_Window.onSelect()">
+        <listhead>
+            <listheader label="服務代碼"/>
+            <listheader label="服務名稱"/>
+            <listheader label="商店代碼"/>
+            <listheader label="價格"/>
+            <listheader label="服務延展天數"/>
+            <listheader label="服務說明"/>
+            <listheader label="服務啟停"/>
+            <listheader label="CardType"/>
+        </listhead>
+    </listbox>
+</window>

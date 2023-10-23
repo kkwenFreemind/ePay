@@ -1,0 +1,160 @@
+<html class="no-js" lang="zh-TW" xmlns:zk="zk" xmlns:z="zul">
+<head>
+    <title>亞太電信官方網站</title>
+
+    <meta charset="utf-8"></meta>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+
+    <!-- HTML META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta name="keywords" content="005,1805,0980,0982,國際電話,快樂通358,快樂通333,快樂通555,快樂通888,Qma,國際電話,台啤籃球隊,資費,新申辦,續約,Qma行動加值服務,560,市內電話,iCall,ADSL,指定選接服務,行動台中,線上繳款,加值服務,加值活動,Qma行動加值服務,560ColorRing 來電鈴,簡訊便利站,QmaLite 加值服務,QmaPlus 加值服務,加值服務資費,加值內容合作提案,MVPN,亞太固網,亞太行動,註冊英文網址, 註冊個人網址. 註冊泛中文化網址, 動態DNS,轉址服務,網域名稱查詢, 虛擬主機服務,虛擬郵件服務,主機代管服務,車隊管理,策略聯盟,0809多功能受話方付費,市內電話服務,005國際直撥電話,015經濟型國際電話,1805國內長途電話,即時多方通話產品,050一般費率服務,020付費語音服務,指定選接服務,大量語音播送,大量傳真發送,Megalink寬頻上網服務,企業專線上網服務,ADSL寬頻上網服務,乙太專線服務,國內數據專線服務,國際數據專線服務,ATM VPN服務,Frame Relay VPN,IP VPN服務'"></meta>
+    <meta name="description" content="「Making Better Changes，為你 做更好」亞太電信整合寬頻固網(Broadband Fixed Lines)、寬頻行動通信(Broadband Wireless)與寬頻網際網路(Broadband Internet)，提供個人和企業「從A到A+」全方位的產品與服務。"></meta>
+    <meta name="author" content="A+ 亞太電信官方網站"></meta>
+
+    <!-- Facebook META -->
+    <meta property="og:image" content="../assets-cp/img/icon/head_blue_200x200.png"></meta>
+    <meta property="og:title" content="A+ 亞太電信官方網站"></meta>
+    <meta property="og:description" content="「Making Better Changes，為你 做更好」亞太電信整合寬頻固網(Broadband Fixed Lines)、寬頻行動通信(Broadband Wireless)與寬頻網際網路(Broadband Internet)，提供個人和企業「從A到」全方位的產品與服務。"></meta>
+    <meta property="og:url" content="https://www.aptg.com.tw/"></meta>
+    <meta property="og:site_name" content="亞太電信官方網站"></meta>
+    <meta property="og:type" content="website"></meta>
+    <!-- HTML5 Microdata -->
+    <meta itemprop="name" content="亞太電信官方網站"></meta>
+    <meta itemprop="description" content="「Making Better Changes，為你 做更好」亞太電信整合寬頻固網(Broadband Fixed Lines)、寬頻行動通信(Broadband Wireless)與寬頻網際網路(Broadband Internet)，提供個人和企業「從A到」全方位的產品與服務。"></meta>
+    <meta itemprop="image" content="../assets-cp/img/head_blue_200x200.png"></meta>
+        
+    <!-- Favicon and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets-cp/img/icon/apple-touch-icon-144x144-precomposed.png"></link>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets-cp/img/icon/apple-touch-icon-114x114-precomposed.png"></link>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets-cp/img/icon/apple-touch-icon-72x72-precomposed.png"></link>
+    <link rel="apple-touch-icon-precomposed" href="../assets-cp/img/icon/apple-touch-icon-57x57-precomposed.png"></link>
+    <link rel="shortcut icon" href="../assets-cp/img/icon/favicon.ico"></link>
+    <link rel="icon" href="../assets-cp/img/icon/favicon.ico"></link>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="../assets-cp/css/apt-cp.css"></link>
+    <link rel="stylesheet" href="../assets-cp/css/contents.css"></link>
+    <link rel="stylesheet" href="../css/word_2015.css"></link>
+
+    <!-- Javascript -->
+    <script src="../assets-cp/js/jquery.js"></script>
+    <script src="../assets-cp/js/apt-cp-rw.js"></script>
+    <script src="../assets/js/apt-app-unit.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="../assets-cp/js/html5shiv.js"></script>
+        <![endif]-->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="../assets-cp/js/selectivizr-min.js"></script>
+        <![endif]-->
+	<zkhead/>
+</head>
+
+<body class="apt">
+    <div class="wrapper">
+        <!-- Header
+	========================================================================================-->
+        <header>
+            <div class="container">
+                <!-- apt logo -->
+                <div class="pull-left apt-logo">
+                    <h1>
+                        <a href="http://www.aptg.com.tw" title="亞太電信官方網站">
+                            <img src="../assets-cp/img/apt-logo.png" alt="亞太電信官方網站"/>
+                        </a>
+                    </h1>
+                    <h2>
+                        <a href="http://www.aptg.com.tw/my/" title="亞太電信">
+                            <img src="../assets-cp/img/apt-txt-logo.png" alt="亞太電信"/>
+                        </a>
+                    </h2>
+                </div>
+                <div class="pull-right apt-main-nav">
+                    <a class="apt-main-nav-btn" href="#this" title="開啟選單">開啟選單</a>
+                    <ul class="nav nav-pills">
+                        <li class="apt-lte"><a target="_top" ta="" href="http://4glte.aptg.com.tw" title="4G LTE">4G LTE</a></li>
+                        <li class="apt-my"><a target="_top" ta="" href="http://www.aptg.com.tw/my/" title="行動用戶">行動用戶</a></li>
+                        <li class="apt-home"><a target="_top" ta="" href="http://www.aptg.com.tw/home/" title="市話寬頻">市話寬頻</a></li>
+                        <li class="apt-vas"><a target="_top" ta="" href="http://www.aptg.com.tw/vas/" title="加值服務">加值服務</a></li>
+                        <li class="apt-esp"><a target="_top" ta="" href="http://esp.aptg.com.tw/" title="企業用戶">企業用戶</a></li>
+                        <li class="apt-eshop"><a target="_top" ta="" href="http://www.aptg.com.tw/eshop/" title="網路門市">網路門市</a></li>
+                        <li class="apt-ecare"><a target="_top" ta="" href="http://www.aptg.com.tw/ecare/" title="會員中心">會員中心</a></li>
+                        <li class="apt-home"><a target="_top" ta="" href="http://www.aptg.com.tw/" title="回官網首頁">回官網首頁</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contents
+	========================================================================================-->
+        <div class="container main">
+            <!-- [.apt-contents]start -->
+			<div class="word_12pt">
+			<a href="http://www.aptg.com.tw" class="breadcrumb">首頁</a>&gt;
+			<a href="https://www.aptg.com.tw/ecare/ecHome.seam" class="breadcrumb">會員中心</a>&gt;
+			<a class="breadcrumb"></a>
+			</div>
+
+<!--Start Body************************************************* -->
+
+
+    <z:window id="OnlineReturnURL_Window3" use="com.apt.epay.ui.OnlineReturnURL_Window" border="none">
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true" />
+		<div align="center"><z:label value="不符合儲值權限" id ="PinCodeFail" style="font-family: '微軟正黑體';font-size: 20px; "/></div>
+         <z:div align="center">
+            <z:button label="回會員中心" href="https://www.aptg.com.tw/ecare/ecHome.seam"  style="border-radius: 10px; padding: 5px 15px; border: none; font-size: 20px; color: #fff; background: rgb(255, 204, 102); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255, 204, 102, 1) 0%, rgba(255, 153, 0, 1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 204, 102, 1)), color-stop(100%, rgba(255, 153, 0, 1))); /* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255, 204, 102, 1) 0%, rgba(255, 153, 0, 1) 100%); /* Chrome10+, Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255, 204, 102, 1) 0%, rgba(255, 153, 0, 1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255, 204, 102, 1) 0%, rgba(255, 153, 0, 1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255, 204, 102, 1) 0%, rgba(255, 153, 0, 1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc66', endColorstr='#ff9900', GradientType=0 ); /* IE6-9 */"/> 
+        </z:div>         
+    </z:window>
+
+<!--End Body************************************************* -->
+            <!-- [.apt-contents]end -->
+        </div>
+    </div>
+
+    <!-- Footer
+========================================================================================-->
+    <footer>
+        <div class="container">
+            <!-- footer nav -->
+            <div class="pull-left footer-nav">
+                <ul class="nav nav-pills">
+                    <li><a target="_top" href="http://www.aptg.com.tw/corporate/APTIntroduction.htm" title="關於亞太">關於亞太</a></li>
+                    <li><a target="_top" href="http://www.aptg.com.tw/others/PrivacyPolicy.htm" title="隱私權政策">隱私權政策</a></li>
+                    <li><a target="_top" href="http://www.aptg.com.tw/others/CopyRight.htm" title="著作權聲明">著作權聲明</a></li>
+                    <li><a target="_top" href="http://www.aptg.com.tw/others/TermsConditions.htm" title="服務條款">服務條款</a></li>
+                    <li><a target="_top" href="http://www.aptg.com.tw/others/RCRecruit.htm" title="菁英招募">菁英招募</a></li>
+                    <li><a target="_top" href="http://www.aptg.com.tw/others/BusinessRegulations.htm" title="各項聲明">各項聲明</a></li>
+                    <li><a target="_top" href="http://www.aptg.com.tw/corporate/CUContactUs.htm" title="聯絡我們">聯絡我們</a></li>
+                    <li><a target="_top" href="http://www.aptg.com.tw/others/ap/proposal" title="合作提案">合作提案</a></li>
+                    <li><a target="_top" href="http://www.aptg.com.tw/others/Coverage.htm" title="行動網路服務涵蓋">行動網路服務涵蓋</a></li>
+                    <li><a target="_top" href="http://www.aptg.com.tw/others/SystemBoard.htm" title="服務公告">服務公告</a></li>
+                </ul>
+            </div>
+            <!-- footer copyright -->
+            <div class="pull-right footer-copyright">
+                Copyright © 2014 亞太電信版權所有
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Mask -->
+    <div class="mbi-mask"></div>
+
+    <!-- Javascript
+========================================================================================-->
+
+
+
+
+</body>
+
+</html>
+

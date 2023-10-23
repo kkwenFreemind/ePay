@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="SCTCard_qry_Window" title="查詢" border="normal" use="com.apt.epay.ui.admin.SCTCard_qry_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                ICCID
+                <textbox id="text_iccid"/>
+            </row>
+
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="SCTCard_qry_Window.doQuery()" />
+                    <button label="清除" onClick="SCTCard_qry_Window.onClear()"/>
+                </hbox>
+            </row>
+
+        </rows>
+    </grid>
+    <separator bar="true"/>
+    <listbox id="listbox_sctcard_log"  mold="paging" pageSize="20" multiple="true">
+        <listhead sizable="true">
+            <listheader label="CardName"  sort="auto"/>
+            <listheader label="ICCID Start"  sort="auto"/>
+            <listheader label="ICCID End" sort="auto"/>
+            <listheader label="數目" sort="auto"/>
+            <listheader label="供應商" sort="auto"/>
+            <listheader label="APN" sort="auto"/>
+            <listheader label="PIN/PUK" sort="auto"/>            
+            <listheader label="備註" sort="auto"/>
+        </listhead>
+    </listbox>
+    <separator/>    
+</window>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信基本資料查詢" ?>
+<?meta content="text/html; charset=UTF-8" pageEncoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="OnlineBasicInfoDeposit_Window" title="基本資料查詢" border="normal" use="com.apt.epay.ui.OnlineBasicInfoDeposit_Window">
+        <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true"/>
+        <style src="/assets-cp/css/apt-cp.css"/>
+        <zscript><![CDATA[
+
+    ]]>
+        </zscript>
+
+        <separator/>
+        <auxhead>
+            <auxheader label=" " style="height:20px;"/>
+        </auxhead>
+        <div align="center" id="div_sms_conf">
+           
+            <groupbox width="70%">
+                <vbox>
+                    <separator spacing="5px"/>
+
+                    <hlayout>
+                        <image src="/img/icon_red.gif"/>
+                        合約門號
+                        <textbox id="textbox_mdn" width="200px" disabled = "true"/>
+                    </hlayout>    
+                    <hlayout>
+                        <image src="/img/icon_red.gif"/>
+                        服務類型
+                        <textbox id="textbox_servicename" width="200px" disabled = "true"/>
+                    </hlayout> 
+                    <hlayout>
+                        <image src="/img/icon_red.gif"/>
+                        合約有效期限
+                        <textbox id="textbox_contract_expire" width="200px" disabled = "true"/>
+                    </hlayout>                                       
+                    <hlayout>
+                        <image src="/img/icon_red.gif"/>
+                        通信基本費(元)
+                        <textbox id="textbox_tel_balance" width="80px" disabled = "true"/>
+                        到期日
+                        <textbox id="textbox_tel_expire" width="80px" disabled = "true"/>
+                    </hlayout>  
+                    <hlayout>
+                        <image src="/img/icon_red.gif"/>
+                        通信贈送費(元)
+                        <textbox id="textbox_tel_add_balance" width="80px" disabled = "true"/>
+                        到期日
+                        <textbox id="textbox_tel_add_expire" width="80px" disabled = "true"/>
+                    </hlayout>                     
+                    <hlayout>
+                        <image src="/img/icon_red.gif" id="red1"/>
+                        <label value="數據基本費(MB)" id ="textbox_data_balance_id"/>                        
+                        <textbox id="textbox_data_balance" width="80px" disabled = "true"/>
+                        <label value="到期日" id ="textbox_data_expire_id"/>                         
+                        <textbox id="textbox_data_expire" width="80px" disabled = "true"/>
+                    </hlayout>  
+                    <hlayout>
+                        <image src="/img/icon_red.gif" id="red2"/>
+                        <label value="數據贈送費(MB)" id ="textbox_data_add_balance_id"/>
+                        <textbox id="textbox_data_add_balance" width="80px" disabled = "true"/>
+                        <label value="到期日" id ="textbox_data_add_expire_id"/> 
+                        <textbox id="textbox_data_add_expire" width="80px" disabled = "true"/>
+                    </hlayout>        
+                    <hlayout>
+                        <image src="/img/icon_red.gif" id="red3"/>
+                        <label value="網內語音費(秒)" id ="textbox_onnet_balance_id"/>
+                        <textbox id="textbox_onnet_balance" width="80px" disabled = "true"/>
+                        <label value="到期日" id ="textbox_onnet_expire_id"/>                        
+                        <textbox id="textbox_onnet_expire" width="80px" disabled = "true"/>
+                    </hlayout>                     
+                                                                                                                                                                      
+                </vbox>
+
+            </groupbox>
+        </div>
+            
+        <div align="center">
+            <button label="回會員中心" id="BackBtn" >
+                <attribute name="onClick">
+                    OnlineBasicInfoDeposit_Window.backURL();
+                </attribute>
+            </button>
+        </div>
+     
+    </window>
+    
+
+
+</zk>

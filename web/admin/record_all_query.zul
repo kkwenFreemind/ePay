@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="record_all_query" title="記錄查詢" border="normal"  use="com.apt.epay.ui.admin.record_query_Window" >
+    <zscript><![CDATA[ 
+
+    ]]>
+    </zscript>
+    
+    <timer id="timer" delay="10000" repeats="true"  onTimer="record_all_query.onTimer()"/> 
+    
+    
+    <separator bar="true"/>
+    
+
+        5F用餐紀錄                
+
+    <listbox id="listbox_5f_log"  mold="paging" pageSize="5" multiple="true">
+        <listhead sizable="true">
+            <listheader label="日期"  sort="auto"/>
+            <listheader label="員工編號"  sort="auto"/>
+            <listheader label="交易品名"  sort="auto"/>
+            <listheader label="交易代號"  sort="auto"/>
+            <listheader label="交易狀態" sort="auto"/>            
+            <listheader label="交易金額" sort="auto"/>
+
+        </listhead>
+    </listbox>
+    
+
+        3F坐太久紀錄                
+
+    <listbox id="listbox_3f_log"  mold="paging" pageSize="5" multiple="true">
+        <listhead sizable="true">
+            <listheader label="員工編號"  sort="auto"/>
+            <listheader label="通知時間"  sort="auto"/>
+            <listheader label="通知狀態"  sort="auto"/>
+
+        </listhead>
+    </listbox>
+    
+        1F差勤紀錄                
+
+    <listbox id="listbox_1f_log"  mold="paging" pageSize="5" multiple="true">
+        <listhead sizable="true">
+            <listheader label="員工編號"  sort="auto"/>
+            <listheader label="上班時間"  sort="auto"/>
+            <listheader label="下班時間"  sort="auto"/>
+            <listheader label="出勤日期"  sort="auto"/>
+            <listheader label="狀態"  sort="auto"/>
+           
+
+        </listhead>
+    </listbox>    
+    
+    <separator/>
+    
+</window>

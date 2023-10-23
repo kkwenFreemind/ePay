@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信CP金流" ?>
+<zk>
+    <window>
+        <div xmlns:h="http://www.w3.org/1999/xhtml" >
+            <h:form name="info" method="POST" action="${sessionScope.sendURL}">
+                <!--<h:form name="info" method="POST" action="${sessionScope.sendURL}" >-->
+                <h:input type="hidden" name="encryptResponseMsg"  value="${sessionScope.encryptResponseMsg}" />
+                <h:input type="hidden" name="callerMerchantId" value="${sessionScope.callerMerchantId}" />
+            </h:form>
+      
+            <h:script> 
+                document.info.setAttribute("method", "POST");
+                document.info.submit(); 
+            </h:script> 
+        </div>
+    </window>
+</zk>

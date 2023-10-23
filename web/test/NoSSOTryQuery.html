@@ -1,0 +1,35 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NoSSO 儲值記錄查詢 Test URL Link</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div>NoSSO 儲值記錄查詢 Test</div>
+        <br/>
+        <form action="NoSSOTryQuery.jsp" method="POST">
+            CPID<input type="text" id="CPID" name="CPID" value="10001" />
+            <br/>
+            MDN<input type="text" id="MDN" name="MDN" value="0906009101" />
+            <br/>  
+            SALESID<input type="text" id="SALESID" name="SALESID" value="09600333" />
+            <br/>   
+            STOREID<input type="text" id="STOREID" name="STOREID" value="A1009923" />
+            <br/>   
+            STORENAME<input type="text" id="STORENAME" name="STORENAME" value="南港全力" />            
+            <br/>   
+            儲值方式<input type="text" id="APISRCID" name="APISRCID" value="2" />
+            <br/>   
+            交易起始日期<input type="text" id="STARTDATETIME" name="STARTDATETIME" value="20170701000000" />
+            <br/>   
+            交易結束日期<input type="text" id="ENDDATETIME" name="ENDDATETIME" value="20170728000000" />            
+            <br/>       
+            <br/>               
+            <button type="submit">確認</button>
+        </form>
+    </body>
+</html>

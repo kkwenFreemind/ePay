@@ -1,0 +1,23 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CP 發票開立通知</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div>CP 發票開立通知</div>
+        <br/>
+        <form action="cpInvoiceTest.jsp" method="POST">
+            invoice:<textarea id="invoice" name="invoice" rows="30" cols="120">
+&lt;PaymentGatewayXmlApi&gt;&lt;InvoiceRes&gt;&lt;libm&gt;141105150122024&lt;/libm&gt;&lt;type&gt;INV_CREATED&lt;/type&gt;&lt;status&gt;Y&lt;/status&gt;&lt;discount_no&gt;0&lt;/discount_no&gt;&lt;invoice_no&gt;ER67663681&lt;/invoice_no&gt;&lt;invoice_created_date&gt;2014-11-05&lt;/invoice_created_date&gt;&lt;random_no&gt;1620&lt;/random_no&gt;&lt;buyer_id&gt;0921009024&lt;/buyer_id&gt;&lt;tax_type&gt;1&lt;/tax_type&gt;&lt;response_msg&gt;OK&lt;/response_msg&gt;&lt;response_time&gt;2014-11-05 15:26:13&lt;/response_time&gt;&lt;items&gt;&lt;item&gt;&lt;no&gt;1&lt;/no&gt;&lt;product_name&gt;music&lt;/product_name&gt;&lt;quantity&gt;1&lt;/quantity&gt;&lt;price&gt;17&lt;/price&gt;&lt;not_include_tax&gt;17&lt;/not_include_tax&gt;&lt;tax&gt;1&lt;/tax&gt;&lt;subtotal&gt;17&lt;/subtotal&gt;&lt;/item&gt;&lt;/items&gt;&lt;/InvoiceRes&gt;&lt;/PaymentGatewayXmlApi&gt;
+            </textarea>
+            <br/>
+            <br/>
+            <button type="submit" onclick="javascript:this.disabled=true;">確認</button>
+        </form>
+    </body>
+</html>

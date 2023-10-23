@@ -1,0 +1,100 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EPAY</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <!--
+ <div><a href="http://10.31.80.210:8080/EPAY/admin/login.zul">Admin</a></div>      
+        -->
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PincodeOrder.html">PincodeOrder</a></div>
+        <div>======= POS ====== </div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/UserStateLookupRequest.html">POSUserStateLookup</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PosServiceLookup.html">PosServiceLookup</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PosServiceOrder.html">PosServiceOrder</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/POSServiceOrderStatus.html">POSServiceOrderStatus</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PosUserAccountLookup.html">PosUserAccountLookup</a></div>
+        <div> == NPGW == </div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineVASDeposit_NPGW.zhtml">NPGW 網站儲值</a></div>
+
+<div> = TDE NO SSO = </div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOServiceOrder.html">NoSSO 網站儲值</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOPinCode.html">NoSSO儲值卡儲值(Pincode)</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOAdjustAccount.html">NoSSO餘額抵扣</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOBasicInfo.html">NoSSO餘額查詢</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOTryQuery.html">NoSSO儲值紀錄查詢</a></div>
+
+<div> = TDE = </div>
+<div><a href="http://10.31.80.210:8080/EPAY/test/OnlineDeposit.zul">CancelAuth測試</a></div>
+<div><a href="http://10.31.80.210:8080/EPAY/api/VoiceBucketCleanForiCallReq?mdn=0906077724&promotionCode=P4G1521000&adjustflag=n">x限制發話</a></div>
+<div><a href="http://10.31.80.210:8080/EPAY/admin/login.zul">Admin</a></div>
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_SMSDeposit.zhtml">SMS測試</a></div>
+<div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlinePinCodeDeposit.zhtml">儲值卡儲值(Pincode)</a></div>
+<div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineBasicInfoDeposit.zhtml">餘額查詢(3G/4G)</a></div>
+<div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineTransQuery.zhtml">儲值記錄查詢(3G/4G)</a></div>
+<div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineVASDeposit.zhtml">網站儲值</a></div>
+<div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineAdjustAccountDeposit.zhtml">餘額抵扣</a></div>
+
+
+<!-- GTCRM&MDN=0906441093&STORE_ID=70771235&SALES_ID=09600333&SRC_ID=1&INVOICE_NO=A1234567890&TIMESTAMP=20150817170000&OCCHECKPOING=F -->
+<!-- R1RDUk0mTUROPTA5MDY0NDEwOTMmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAwMDAmT0NDSEVDS1BPSU5HPUY= -->
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlinePinCodeDeposit.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=R1RDUk0mTUROPTA5MDY0NDEwOTMmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAwMDAmT0NDSEVDS1BPSU5HPUY">客服儲值卡儲值(Pincode)(Flag)</a></div>
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlinePinCodeDeposit.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=QVBUQ01TJk1ETj0wOTA2NDAyMDI1JlNUT1JFX0lEPTcwNzcxMjM1JlNBTEVTX0lEPTA5NjAwMzMzJlNSQ19JRD0xJklOVk9JQ0VfTk89QTEyMzQ1Njc4OTAmVElNRVNUQU1QPTIwMTUwOTA4MTcwMDAw">客服儲值卡儲值(Pincode)(No Flag)</a></div>
+
+<!-- GTCRM&MDN=0906441093&STORE_ID=70771235&SALES_ID=09600333&SRC_ID=1&INVOICE_NO=A1234567890&OCCHECKPOING=F&TIMESTAMP=20150817170000 -->
+<!-- R1RDUk0mTUROPTA5MDY0NDEwOTMmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZPQ0NIRUNLUE9JTkc9RiZUSU1FU1RBTVA9MjAxNTA4MTcxNzAwMDA= -->
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlineTransQuery.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=R1RDUk0mTUROPTA5MDY0NDEwOTMmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZPQ0NIRUNLUE9JTkc9RiZUSU1FU1RBTVA9MjAxNTA4MTcxNzAwMDA=">客服儲值紀錄查詢(Flag)</a></div>
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlineTransQuery.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=QVBUQ01TJk1ETj0wOTA2NDAyMDI1JlNUT1JFX0lEPTcwNzcxMjM1JlNBTEVTX0lEPTA5NjAwMzMzJlNSQ19JRD0xJklOVk9JQ0VfTk89QTEyMzQ1Njc4OTAmVElNRVNUQU1QPTIwMTUwODE3MTcwMDAw">客服儲值紀錄查詢(No Flag)</a></div>  
+<!-- GTCRM&MDN=0906441093&STORE_ID=70771235&SALES_ID=09600333&SRC_ID=1&INVOICE_NO=A1234567890&TIMESTAMP=20150817170000&OCCHECKPOING=F -->
+<!-- R1RDUk0mTUROPTA5MDY0NDEwOTMmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAwMDAmT0NDSEVDS1BPSU5HPUY= -->
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlineAdjustAccountDeposit.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=R1RDUk0mTUROPTA5MDY0NDEwOTMmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAwMDAmT0NDSEVDS1BPSU5HPUY=">客服餘額抵扣(Flag)</a></div>
+<!-- GTCRM&MDN=0906441093&STORE_ID=70771235&SALES_ID=09600333&SRC_ID=1&INVOICE_NO=A1234567890&TIMESTAMP=201508171700&OCCHECKPOING=F -->
+<div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlineVASDeposit.zhtml?PKEY=dc48c822ffe5536095addd0a2eef0abb&SS=R1RDUk0mTUROPTA5MDY0NDEwOTMmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAwJk9DQ0hFQ0tQT0lORz1G">客服網路儲值(No Flag)</a></div>
+
+<div> = API TDE = </div>
+<div><a href="http://epaytde.aptg.com.tw/EPAY/test/cpTransactionRecTest.html">模擬授權結果回覆TransactionRec API Test</a></div>
+<div><a href="http://epaytde.aptg.com.tw/EPAY/test/SubscriberLookupTest.html">虛擬儲值卡儲值清單ServiceLookupRequest API Test</a></div>
+<div><a href="http://epaytde.aptg.com.tw/EPAY/test/VCardReserveTest.html">虛擬儲值卡預約ServiceReserveRequest API Test</a></div>
+<div><a href="http://epaytde.aptg.com.tw/EPAY/test/VCardUnReserveTest.html">虛擬儲值卡取消預約ServiceUnReserveRequest API Test</a></div>
+<div><a href="http://epaytde.aptg.com.tw/EPAY/test/ServiceOrderTest.html">虛擬儲值卡儲值ServiceOrderRequest API Test</a></div>
+<br/><br/>
+<div> = Production = </div>
+
+<div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineVASDeposit_NPGW.zhtml">NPGW 網站儲值</a></div>
+<div><a href="http://epay.aptg.com.tw/EPAY/test/OnlineDeposit.zul">CancelAuth測試</a></div>
+<div><a href="http://epay.aptg.com.tw/EPAY/api/VoiceBucketCleanForiCallReq?mdn=0906077724&promotionCode=P4G1521000&adjustflag=n">x限制發話</a></div>
+<div><a href="http://epay.aptg.com.tw/EPAY/admin/login.zul">Admin</a></div>
+<div><a href="http://epay.aptg.com.tw/EPAY/cms/CMS_SMSDeposit.zhtml">SMS測試</a></div>
+
+<div><a href="https://auth.aptg.com.tw:/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlinePinCodeDeposit.zhtml">儲值卡儲值(Pincode)</a></div>
+<div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineBasicInfoDeposit.zhtml">餘額查詢(3G/4G)</a></div>
+<div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineTransQuery.zhtml">儲值記錄查詢(3G/4G)</a></div>
+<div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineVASDeposit.zhtml">網站儲值</a></div>
+<div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineAdjustAccountDeposit.zhtml">餘額抵扣</a></div>
+<div><a href="http://210.200.69.45/EPAY/cms/CMS_OnlinePinCodeDeposit.zhtml?PKEY=1122334455&encryptResponseMsg=QVBUQ01TJk1ETj0wOTA2MDQ0MDI1JlNUT1JFX0lEPTcwNzcxMjM1JlNBTEVTX0lEPTA5NjAwMzMzJlNSQ19JRD0xJklOVk9JQ0VfTk89QTEyMzQ1Njc4OTAmVElNRVNUQU1QPTIwMTUwODE3MTcwMCZPQ0NIRUNLUE9JTkc9Rg==">客服儲值卡儲值(Pincode)</a></div>
+<div><a href="http://210.200.69.45/EPAY/cms/CMS_OnlinePinCodeDeposit.zhtml?PKEY=1122334455&encryptResponseMsg=TUROPTA5MDY0NDEwOTAmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAw">客服儲值卡儲值(Pincode)</a></div>
+<div><a href="http://210.200.69.45/EPAY/cms/CMS_OnlineTransQuery.zhtml?PKEY=1122334455&encryptResponseMsg=TUROPTA5MDY0NDEwOTAmU1RPUkVfSUQ9NzA3NzEyMzUmU0FMRVNfSUQ9MDk2MDAzMzMmU1JDX0lEPTEmSU5WT0lDRV9OTz1BMTIzNDU2Nzg5MCZUSU1FU1RBTVA9MjAxNTA4MTcxNzAw">客服儲值紀錄查詢</a></div>  
+
+<div> = API Prod = </div>
+
+
+<div><a href="http://epay.aptg.com.tw/EPAY/test/cpTransactionRecTest.html">模擬授權結果回覆TransactionRec API Test</a></div>
+<div><a href="http://epay.aptg.com.tw/EPAY/test/SubscriberLookupTest.html">虛擬儲值卡儲值清單ServiceLookupRequest API Test</a></div>
+<div><a href="http://epay.aptg.com.tw/EPAY/test/VCardReserveTest.html">虛擬儲值卡預約ServiceReserveRequest API Test</a></div>
+<div><a href="http://epay.aptg.com.tw/EPAY/test/VCardUnReserveTest.html">虛擬儲值卡取消預約ServiceUnReserveRequest API Test</a></div>
+<div><a href="http://epay.aptg.com.tw/EPAY/test/ServiceOrderTest.html">虛擬儲值卡儲值ServiceOrderRequest API Test</a></div>
+
+        <div>======= POS ====== </div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/prod/PincodeOrder.html">PosPincodeOrder</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdUserStateLookupRequest.html">POSUserStateLookup</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdPosServiceLookup.html">PosServiceLookup</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdPosServiceOrder.html">PosServiceOrder</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdPOSServiceOrderStatus.html">POSServiceOrderStatus</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdPosUserAccountLookup.html">PosUserAccountLookup</a></div>
+</body>
+</html>

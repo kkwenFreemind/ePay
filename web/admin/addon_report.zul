@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="addon_report" title="促案名單查詢" border="normal"  use="com.apt.epay.ui.admin.addon_report_Window" >
+    <zscript><![CDATA[ 
+
+    ]]>
+    </zscript>
+    <grid width="100%">
+        <rows>
+            <!--
+            <row>
+                選擇廠商:
+                <listbox  id="listbox_cp" mold="select" rows="1"  onSelect="tx_log_query.onListService()">
+                    <listitem label="*" value="*"/>
+                </listbox>
+            </row>
+            <row>
+                選擇服務:
+                <listbox id="listbox_service" mold="select" rows="1">
+                    <listitem id="select_service_all" label="*" value="*"/>
+                </listbox>
+            </row>
+            <row>
+                選交易類型:
+                <listbox   id="listbox_service_type" mold="select" rows="1">
+                    <listitem label="*" value="*"/>
+                </listbox>
+            </row>
+                        <row>
+                交易狀態:
+                <listbox id="list_tx_status" mold="select" rows="1">
+                    <listitem label="*" value="*"/>
+                </listbox>
+            </row>
+            -->
+        
+            <row>
+                交易日期起始時間:
+                <hbox>
+                    <datebox id="start_db"/>
+                    <timebox id="start_tb"/>
+                </hbox>
+            </row>
+            <row>
+                交易日期結束時間:
+                <hbox>
+                    <datebox id="end_db"/>
+                    <timebox id="end_tb"/>
+                </hbox>
+            </row>
+            <row>
+                交易狀態:
+                <hbox>
+                    <textbox id="text_status"/>
+                </hbox>
+            </row>
+            <row>
+                付款方式:
+                <hbox>
+                    <textbox id="text_paymethod"/>
+                </hbox>
+            </row>    
+            <row>
+                金額:
+                <hbox>
+                    <textbox id="text_amount"/>
+                </hbox>
+            </row>             
+            <row>
+                儲值系統ALU/中興:
+                <hbox>
+                    <textbox id="text_addonsystem"/>
+                </hbox>
+            </row>                         
+            <row>
+                <hbox>
+                    <button label="EXCEL匯出" onClick="addon_report.doQuery()"  />
+                    <button label="查詢" onClick="addon_report.doQuery()"  />
+                    <button label="清除" onClick="addon_report.onClear()" />
+                </hbox>
+            </row>
+        </rows>
+    </grid>
+    <separator bar="true"/>
+    <listbox id="listbox_tx_log"  mold="paging" pageSize="20" multiple="true">
+        <listhead sizable="true">
+            <listheader label="交易序號"  sort="auto"/>
+            <listheader label="交易日期"  sort="auto"/>
+            <listheader label="儲值方案"  sort="auto"/>
+            <listheader label="付款方式"  sort="auto"/>
+            <listheader label="儲值結果" sort="auto"/>
+            <listheader label="儲值方式" sort="auto"/>               
+            <listheader label="繳費狀態" sort="auto"/>
+            <listheader label="金 額(元)" sort="auto"/>    
+            <listheader label="銷售點代碼" sort="auto"/>  
+            <listheader label="進件代碼" sort="auto"/>   
+            <listheader label="儲值系統" sort="auto"/>  
+            <listheader label="發票號碼" sort="auto"/>  
+        </listhead>
+    </listbox>
+    <separator/>
+</window>

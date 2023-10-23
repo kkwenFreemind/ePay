@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="cdr_query_day_Window" title="CDR Day Query" border="normal" use="com.apt.epay.ui.sct.cdr_query_day_Window" >
+
+    <grid width="100%">
+        <rows>
+            <row>
+                CardId/IMSI:
+                <textbox id="text_imsi" constraint="no empty,/^[0-9]{15,16}/: CardId/IMSI為數字"/>
+            </row>
+
+            <row>
+                <hbox>
+                    <button label="查詢" onClick="cdr_query_day_Window.query_imsi()" />
+                    <button label="清除" onClick="cdr_query_day_Window.onClear()"/>
+                </hbox>
+            </row>
+        </rows>
+    </grid>
+    <separator bar="true"/>
+    <listbox id="listbox_cdr_log"  mold="paging" pageSize="20" multiple="true">
+        <listhead sizable="true">
+            <listheader label="日期時間"  sort="auto"/>
+            <listheader label="使用量(MB)"  sort="auto"/>
+            <listheader label="Country"  sort="auto"/>
+        </listhead>
+    </listbox>
+    <separator/>
+</window>

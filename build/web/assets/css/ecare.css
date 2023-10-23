@@ -1,0 +1,399 @@
+
+
+body{ background:#FFF;}
+
+
+/*---------------------------------
+     container setting 
+---------------------------------*/
+
+.container{}
+
+.ecareStyle{ margin:0 0 30px 0;}
+.ecareStyle.fullwidth .sidebar{ display:none;}
+.ecareStyle.fullwidth .content{ width:100%; float:none;}
+.sidebar{ width:28%; float:left; padding:0 20px 0 0;}
+.content{float:left; width:69%;}
+.content.fullwidth{ width:100%;}
+.content:after{ content:" "; clear:both; height:30px; display:block;}
+
+#collapse-ct p{ clear:both;}
+.cl-both{clear:both;}
+
+.hpBlock{ padding:10px 20px; border-radius:10px; margin:0 0 20px 0;
+
+
+-moz-box-shadow:0px 0px 10px 0px rgba(20%,20%,40%,0.2);
+-webkit-box-shadow:0px 0px 10px 0px rgba(20%,20%,40%,0.2);
+box-shadow:0px 0px 10px 0px rgba(20%,20%,40%,0.2);
+}
+
+
+
+/*文字樣式*/
+.dialpoint{ font-family:"Comic Sans MS", cursive;}
+
+pre.rule{font-size:12px; width:90%; height:300px; overflow: auto;}
+
+ul.btnNum{ margin:0 0 5px 0; padding:0; height:23px;}
+ul.btnNum li{ 
+	display:block;
+	background:url(../img/btn_num.jpg) no-repeat;
+	width:28px; height:28px;
+	font-size:15px;
+	color:#333; font-weight:bold; font-family:Arial, Helvetica, sans-serif;
+	line-height:1.5em;
+	vertical-align:middle;
+	text-align:center;
+	float:left;
+	list-style:none;
+	margin:0 2px 0 0;
+	padding:1px 0;
+	}
+ul.btnNum li.blank{ 
+	display:block;
+	background:url(none) no-repeat;
+	width:28px; height:28px;
+	font-size:15px;
+	color:#333; font-weight:bold; font-family:Arial, Helvetica, sans-serif;
+	line-height:1.5em;
+	vertical-align:middle;
+	text-align:center;
+	float:left;
+	list-style:none;
+	margin:0 2px 0 0;
+	padding:0px 0;
+	}
+ul.btnNum li.txt{ 
+	display:block;
+	background:url(none) no-repeat;
+	width:auto; height:28px;
+	font-size:13px;
+	color:#666; font-weight:normal; font-family:Arial, Helvetica, sans-serif;
+	line-height:1.5em;
+	vertical-align:middle;
+	text-align:center;
+	float:left;
+	list-style:none;
+	margin:0 2px 0 0;
+	padding:4px 0 0px 0;
+	}
+
+
+/*側邊會員狀態顯示*/
+#MemberStatus{background:#fbfbfb url(../img/collapse-menu_bg_collapsed.jpg) no-repeat left top; position:relative;}
+#MemberStatus span{ width:70px; height:50px;color:#ffffff; display:inline-block; background:none; font-size:50px; margin:0 0 0 8px; float:left;}
+#MemberStatus a.btn-edit{
+	
+	position:absolute; right:0; bottom:0;margin:0; padding:0;  border-radius:0;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 30px 30px;
+border-color: transparent transparent #db0100 transparent;
+
+}
+#MemberStatus a.btn-edit:before{ font: normal normal normal 15px/1 FontAwesome;content: "\f040"; display: inline-block;
+color:#fff;margin:11px 0 0 -15px;line-height: 15px;}
+#MemberStatus ul{  list-style:none; display:inline-block; margin:15px 0; color:#666; width:70%;}
+#MemberStatus ul li.name{ font-size:18px; color:#000; font-weight:bold; font-family:"微軟正黑體";}
+#MemberStatus ul li.nick{ font-size:13px; color:#fc6308;}
+#MemberStatus ul li a{ color:#666; text-decoration:underline;}
+
+
+
+/*側邊選單*/
+.btn-collapse-menu{ display:none;}
+#collapse-menu.collapse{ height:auto;}
+#collapse-menu .accordion-group{background:#fbfbfb url(../img/collapse-menu_bg_collapsed.jpg) no-repeat left top; border:none; padding:0;}
+#collapse-menu .accordion-group span{ color:#fff; font-size:50px; width:50px; margin:-15px 15px 0 8px; display:inline-block;}
+#collapse-menu .accordion-group.open{ height:auto;border:none; margin:0; background:url(../img/collapse-menu_bg.jpg) no-repeat left top; border-radius:0;}
+#collapse-menu .accordion-group.open span{ color:#db0100;}
+#collapse-menu .accordion-heading{ height:50px;}
+#collapse-menu .accordion-heading a{ color:#000; padding:0; line-height:50px; font-size:16px; font-weight:bold; font-family:"微軟正黑體";text-decoration:none !important;}
+#collapse-menu .accordion-body{border-bottom:#fff solid 1px; margin:0; padding:0;}
+#collapse-menu .accordion-inner{ border:none; padding:0;}
+
+#collapse-menu ul{ list-style:none; margin:0 0 0 73px; padding:0;}
+#collapse-menu li a{ font-size:13px; color:#666;line-height:30px;margin:0; padding:0;}
+#collapse-menu li a:before{ content:" "; width:15px; font-size:0.3em; display:inline-block;}
+#collapse-menu li.active a{ color:#db0100;}
+#collapse-menu li.active a:before{ content:"►"; }
+
+#collapse-menu .accordion-group .apt-TheEssentials112,#collapse-menu .accordion-group .apt-TheEssentials142,#collapse-menu .accordion-group .apt-TheEssentials050,#collapse-menu .accordion-group .apt-TheEssentials039{ font-size:35px; padding:10px 5px 0 5px; line-height:50px; vertical-align:middle;}
+
+
+
+/*側邊說明欄位顯示*/
+#SideIntro{position:relative;text-align:center; }
+#SideIntro .window{border:#dddddd solid 1px; 
+
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;padding:5px; margin:0 0 30px 0; border-top:#db0100 solid 3px;}
+#SideIntro h3{ background:#fbfbfb; text-align:center; margin:0 auto; line-height:36px; margin:0 0 20px 0;}
+#SideIntro h3 em{ font-style:normal; font-weight:bold; }
+
+#SideIntro p small{ color:#999;}
+
+
+
+
+/*門市地點的icon*/
+.fa-map-marker{ font-size:20px;}
+
+
+
+/*prgress bar*/
+.progress{ font-size:13px; color:#777;}
+
+.modal-backdrop, .modal-backdrop.fade.in{ z-index:99999;}
+.modal.fade.in{z-index:999999;}
+.modal-body{ height:auto;}
+
+/*FlowStyle*/
+.FlowStyle .progress{ padding:2px; height:auto;}
+.FlowStyle .progress table{ height:10px !important; width:100%; border-collapse: separate; border-spacing: 2px; border-padding:0; border:0;} 
+.FlowStyle .progress td{ background:#ccc; margin:0; padding:0;line-height:0;}
+.FlowStyle .progress td.fa-forward{ font-size:15px; color:#ccc; background:none;  width:0px; text-align:right; vertical-align: baseline;}
+.FlowStyle tr.resultT { border-top:#b94a48 solid 1px; padding:5px 0 0 0 ;}
+.FlowStyle tr.resultB{border-bottom:#b94a48 solid 1px;}
+.FlowStyle .progress td .full{ width:100%;height:18px; display:block; line-height:0; }
+.FlowStyle .progress td .half{ width:50%;height:18px;  display:block; line-height:0;}
+
+
+.FlowStyle .progress.progress-info td .full,.FlowStyle .progress.progress-info td .half{
+background: rgb(30,105,222); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(30,105,222,1) 0%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,105,222,1)), color-stop(51%,rgba(54,144,240,1)), color-stop(100%,rgba(30,105,222,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(30,105,222,1) 0%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(30,105,222,1) 0%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(30,105,222,1) 0%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(30,105,222,1) 0%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e69de', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+}
+.FlowStyle .progress.progress-info td.fa-forward.full{ color:#3690f0 !important;}
+.FlowStyle .progress.progress-warning td .full,.FlowStyle .progress.progress-warning td .half{
+background: rgb(248,181,0); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(248,181,0,1) 0%, rgba(249,210,109,1) 52%, rgba(248,181,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,181,0,1)), color-stop(52%,rgba(249,210,109,1)), color-stop(100%,rgba(248,181,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(248,181,0,1) 0%,rgba(249,210,109,1) 52%,rgba(248,181,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(248,181,0,1) 0%,rgba(249,210,109,1) 52%,rgba(248,181,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(248,181,0,1) 0%,rgba(249,210,109,1) 52%,rgba(248,181,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(248,181,0,1) 0%,rgba(249,210,109,1) 52%,rgba(248,181,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8b500', endColorstr='#f8b500',GradientType=0 ); /* IE6-9 */
+}
+.FlowStyle .progress.progress-warning td.fa-forward.full{ color:#f8b500 !important;}
+.FlowStyle .progress.progress-danger td .full,.FlowStyle .progress.progress-danger td .half{
+background: rgb(240,47,23); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(240,47,23,1) 0%, rgba(244,110,93,1) 51%, rgba(231,56,39,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(240,47,23,1)), color-stop(51%,rgba(244,110,93,1)), color-stop(100%,rgba(231,56,39,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(240,47,23,1) 0%,rgba(244,110,93,1) 51%,rgba(231,56,39,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(240,47,23,1) 0%,rgba(244,110,93,1) 51%,rgba(231,56,39,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(240,47,23,1) 0%,rgba(244,110,93,1) 51%,rgba(231,56,39,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(240,47,23,1) 0%,rgba(244,110,93,1) 51%,rgba(231,56,39,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f02f17', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+
+}
+.FlowStyle .progress.progress-danger td.fa-forward.full{ color:#f02f17 !important;}
+.FlowStyle .progress.progress-success td .full,.FlowStyle .progress.progress-success td .half{
+background: rgb(97,196,25); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(97,196,25,1) 0%, rgba(180,227,145,1) 50%, rgba(97,196,25,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(97,196,25,1)), color-stop(50%,rgba(180,227,145,1)), color-stop(100%,rgba(97,196,25,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(97,196,25,1) 0%,rgba(180,227,145,1) 50%,rgba(97,196,25,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(97,196,25,1) 0%,rgba(180,227,145,1) 50%,rgba(97,196,25,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(97,196,25,1) 0%,rgba(180,227,145,1) 50%,rgba(97,196,25,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(97,196,25,1) 0%,rgba(180,227,145,1) 50%,rgba(97,196,25,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61c419', endColorstr='#61c419',GradientType=0 ); /* IE6-9 */
+}
+.FlowStyle .progress.progress-success td.fa-forward.full{ color:#61c419 !important;}
+
+
+/*FlowStyle2*/
+
+.FlowStyle2 .progress table{ height:10px !important; width:100%; border-collapse: separate; border-spacing: 2px; border-padding:0; border:0;} 
+.FlowStyle2 .progress td{ background:#ccc; margin:0; padding:0;line-height:0;}
+.FlowStyle2 .progress td.fa-forward{ font-size:15px; color:#ccc; background:none;  width:0px; text-align:right; vertical-align: baseline;}
+.FlowStyle2 tr.resultT { border-top:#b94a48 solid 1px; padding:5px 0 0 0 ;}
+.FlowStyle2 tr.resultB{border-bottom:#b94a48 solid 1px;}
+.FlowStyle2 .progress{ background:#ccc; position:relative; height:30px; border-radius:0;}
+.FlowStyle2 .mask{ background:url(../img/Progressbars_20.png) no-repeat left top; width:100%; background-size:100% 100%; height:100%; display:block; position:absolute;}
+
+.FlowStyle2 .progress.progress-info div{
+background: rgb(30,105,222); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(30,105,222,1) 0%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,105,222,1)), color-stop(51%,rgba(54,144,240,1)), color-stop(100%,rgba(30,105,222,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(30,105,222,1) 0%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(30,105,222,1) 0%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(30,105,222,1) 0%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(30,105,222,1) 0%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e69de', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+}
+
+.FlowStyle2 .progress.progress-warning div{
+background: rgb(248,181,0); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(248,181,0,1) 0%, rgba(249,210,109,1) 52%, rgba(248,181,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,181,0,1)), color-stop(52%,rgba(249,210,109,1)), color-stop(100%,rgba(248,181,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(248,181,0,1) 0%,rgba(249,210,109,1) 52%,rgba(248,181,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(248,181,0,1) 0%,rgba(249,210,109,1) 52%,rgba(248,181,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(248,181,0,1) 0%,rgba(249,210,109,1) 52%,rgba(248,181,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(248,181,0,1) 0%,rgba(249,210,109,1) 52%,rgba(248,181,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8b500', endColorstr='#f8b500',GradientType=0 ); /* IE6-9 */
+}
+
+.FlowStyle2 .progress.progress-danger div{
+background: rgb(240,47,23); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(240,47,23,1) 0%, rgba(244,110,93,1) 51%, rgba(231,56,39,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(240,47,23,1)), color-stop(51%,rgba(244,110,93,1)), color-stop(100%,rgba(231,56,39,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(240,47,23,1) 0%,rgba(244,110,93,1) 51%,rgba(231,56,39,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(240,47,23,1) 0%,rgba(244,110,93,1) 51%,rgba(231,56,39,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(240,47,23,1) 0%,rgba(244,110,93,1) 51%,rgba(231,56,39,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(240,47,23,1) 0%,rgba(244,110,93,1) 51%,rgba(231,56,39,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f02f17', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+
+}
+
+.FlowStyle2 .progress.progress-success div{
+background: rgb(97,196,25); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(97,196,25,1) 0%, rgba(180,227,145,1) 50%, rgba(97,196,25,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(97,196,25,1)), color-stop(50%,rgba(180,227,145,1)), color-stop(100%,rgba(97,196,25,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(97,196,25,1) 0%,rgba(180,227,145,1) 50%,rgba(97,196,25,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(97,196,25,1) 0%,rgba(180,227,145,1) 50%,rgba(97,196,25,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(97,196,25,1) 0%,rgba(180,227,145,1) 50%,rgba(97,196,25,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(97,196,25,1) 0%,rgba(180,227,145,1) 50%,rgba(97,196,25,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61c419', endColorstr='#61c419',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+/*表單樣式*/
+td.form-inline{ line-height:2.5em;}
+
+
+ 
+input[type="radio"], input[type="checkbox"]{ margin:0;}
+
+.btn-login { border: #ccc solid 1px; border-radius: 3px; background: #fff; font-size: 12px; color: #666; text-decoration:none !important;}
+.btn-login:before {font: normal normal normal 14px/1 FontAwesome; content: "\f023"; color: #ff6317; font-weight: bold; margin: 0 5px 0 0; font-size: 16px;  }
+.btn-register { border: #ccc solid 1px; border-radius: 3px; background: #fff; font-size: 12px; color: #666; text-decoration:none !important; }
+.btn-register:before {font: normal normal normal 14px/1 FontAwesome; content: "\f007"; color: #ff6317; font-weight: bold; margin: 0 5px 0 0; font-size: 16px; }
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="button"]:focus,
+.uneditable-input:focus {
+  border-color: #dddddd;
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+ 
+/*進度列表樣式*/
+/*progressbar*/
+#progressbar { list-style:none;
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+	
+}
+#progressbar li {
+	list-style-type: none;
+	color: #999;
+	text-transform: uppercase;
+	font-size: 15px;
+	width: 33.33%;
+	float: left;
+	position: relative;text-align:center;
+
+	
+}
+#progressbar li.active{ color:#db0100;}
+
+#progressbar li:before { text-align:center;
+	content: counter(step);
+	counter-increment: step;
+	width: 50px;
+	height:37px;
+	line-height: 100px;
+	display: block;
+	 padding-top:13px;
+	
+	color: #777;
+	background: #ccc;
+	border-radius: 50px;
+	margin: 0 auto 5px auto;
+	border:rgba(0,0,0,0.1) solid 3px;
+	vertical-align:central;
+	
+	
+}
+#progressbar li:nth-child(1):before{content:"\f044";font:normal normal normal 24px/1 FontAwesome;}
+#progressbar li:nth-child(2):before{content:"\f007";font:normal normal normal 24px/1 FontAwesome;}
+#progressbar li:nth-child(3):before{content:"\f00c";font:normal normal normal 24px/1 FontAwesome;}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #ccc;
+	position: absolute;
+	left: -50%;
+	top: 26px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+background: #db0100; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #db0100 0%, #8f0222 98%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#db0100), color-stop(98%,#8f0222)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #db0100 0%,#8f0222 98%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #db0100 0%,#8f0222 98%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #db0100 0%,#8f0222 98%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #db0100 0%,#8f0222 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0100', endColorstr='#8f0222',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+	color: white;
+	-moz-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+-webkit-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}
+
+
+.ContactSet{ border-top:#777 solid 3px; padding:0; text-align:left; clear:both; }
+.ContactSet:after{ content:"　"; clear:both; width:100%; display:block;}
+.ContactSet .row{clear:both;  padding:10px 0 0 0; margin:0; border-bottom:#eee solid 1px; }
+.ContactSet .span2{ font-weight:bold; text-align:right;  }
+.ContactSet .span10{}
+
+
+.SearchBar ul{ list-style:none; margin:0; padding:0;}
+.SearchBar ul li{ margin:0 0 10px 0;}

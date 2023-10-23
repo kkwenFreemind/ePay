@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="account_mod" title="修改帳號" border="normal" use="com.apt.epay.ui.admin.Account_mod_Window">
+
+    <grid width="100%">
+
+    </grid>
+    <separator spacing="5px"  bar="true"/>
+
+    <separator bar="true"/>
+    <listbox id="list_user" width="100%" mold="paging" pageSize="10" multiple="false"  onSelect="account_mod.onSelect()">
+        <listhead>
+            <listheader label="權限角色"/>
+            <listheader label="帳號ID"/>
+            <listheader label="姓名"/>
+            <listheader label="密碼強度"/>
+            <listheader label="Email"/>
+            <listheader label="手機號碼"/>
+        </listhead>
+    </listbox>
+</window>

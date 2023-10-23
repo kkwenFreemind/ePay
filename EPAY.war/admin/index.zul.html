@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="TDE_test" title="測試" border="normal" >
+    <zscript><![CDATA[ 
+
+    ]]>
+    </zscript>
+
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PincodeOrder.html">PincodeOrder</a></div>
+        <div>======= POS ====== </div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/UserStateLookupRequest.html">POSUserStateLookup</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PosServiceLookup.html">PosServiceLookup</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PosServiceOrder.html">PosServiceOrder</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/POSServiceOrderStatus.html">POSServiceOrderStatus</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PosUserAccountLookup.html">PosUserAccountLookup</a></div>
+        <div> == NPGW == </div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineVASDeposit_NPGW.zhtml">NPGW 網站儲值</a></div>
+
+        <div> = TDE NO SSO = </div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOServiceOrder.html">NoSSO 網站儲值</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOPinCode.html">NoSSO儲值卡儲值(Pincode)</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOAdjustAccount.html">NoSSO餘額抵扣</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOBasicInfo.html">NoSSO餘額查詢</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOTryQuery.html">NoSSO儲值紀錄查詢</a></div>
+
+        <div> = TDE = </div>
+        <div><a href="http://10.31.80.210:8080/EPAY/test/OnlineDeposit.zul">CancelAuth測試</a></div>
+
+        <div><a href="http://10.31.80.210:8080/EPAY/admin/login.zul">Admin</a></div>
+        <div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_SMSDeposit.zhtml">SMS測試</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlinePinCodeDeposit.zhtml">儲值卡儲值(Pincode)</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineBasicInfoDeposit.zhtml">餘額查詢(3G/4G)</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineTransQuery.zhtml">儲值記錄查詢(3G/4G)</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineVASDeposit.zhtml">網站儲值</a></div>
+        <div><a href="https://pv.auth.aptg.com.tw:8443/cas/login?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineAdjustAccountDeposit.zhtml">餘額抵扣</a></div>
+
+
+        <div> = API TDE = </div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/cpTransactionRecTest.html">模擬授權結果回覆TransactionRec API Test</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/SubscriberLookupTest.html">虛擬儲值卡儲值清單ServiceLookupRequest API Test</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/VCardReserveTest.html">虛擬儲值卡預約ServiceReserveRequest API Test</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/VCardUnReserveTest.html">虛擬儲值卡取消預約ServiceUnReserveRequest API Test</a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/ServiceOrderTest.html">虛擬儲值卡儲值ServiceOrderRequest API Test</a></div>
+        <br/><br/>
+
+        <div> = Production = </div>
+
+        <div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineVASDeposit_NPGW.zhtml">NPGW 網站儲值</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/OnlineDeposit.zul">CancelAuth測試</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/admin/login.zul">Admin</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/cms/CMS_SMSDeposit.zhtml">SMS測試</a></div>
+
+        <div><a href="https://auth.aptg.com.tw:/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlinePinCodeDeposit.zhtml">儲值卡儲值(Pincode)</a></div>
+        <div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineBasicInfoDeposit.zhtml">餘額查詢(3G/4G)</a></div>
+        <div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineTransQuery.zhtml">儲值記錄查詢(3G/4G)</a></div>
+        <div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineVASDeposit.zhtml">網站儲值</a></div>
+        <div><a href="https://auth.aptg.com.tw/cas/login?service=http://210.200.69.45/EPAY/deposit/OnlineAdjustAccountDeposit.zhtml">餘額抵扣</a></div>
+
+        <div> = API Prod = </div>
+
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/cpTransactionRecTest.html">模擬授權結果回覆TransactionRec API Test</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/SubscriberLookupTest.html">虛擬儲值卡儲值清單ServiceLookupRequest API Test</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/VCardReserveTest.html">虛擬儲值卡預約ServiceReserveRequest API Test</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/VCardUnReserveTest.html">虛擬儲值卡取消預約ServiceUnReserveRequest API Test</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ServiceOrderTest.html">虛擬儲值卡儲值ServiceOrderRequest API Test</a></div>
+
+        <div>======= POS ====== </div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/prod/PincodeOrder.html">PosPincodeOrder</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdUserStateLookupRequest.html">POSUserStateLookup</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdPosServiceLookup.html">PosServiceLookup</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdPosServiceOrder.html">PosServiceOrder</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdPOSServiceOrderStatus.html">POSServiceOrderStatus</a></div>
+        <div><a href="http://epay.aptg.com.tw/EPAY/test/ProdPosUserAccountLookup.html">PosUserAccountLookup</a></div>
+    
+</window>
+

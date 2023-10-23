@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="ext">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/poi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/slf4j-jdk14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/jfreechart.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/itext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/slf4j-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/commons-collections.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/commons-codec.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/Filters.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/jasperreports.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/jcommon.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/commons-io.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/commons-fileupload.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/jxl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/zk7/ext/bsh.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

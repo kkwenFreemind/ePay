@@ -1,0 +1,56 @@
+@charset "utf-8";
+.word_13pt {
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif "微軟新正黑";
+	color: #333;
+	line-height:22px;}
+	
+.word_infor {
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif "微軟新正黑";
+	color: #333;
+	line-height:22px;
+	margin:0 15px 0 5px;}
+
+
+.word_12pt {
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif "微軟新正黑";
+	color: #333;
+	line-height:22px;}
+	
+.word_12pt a{
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif "微軟新正黑";
+	color: #333;
+	line-height:18px;}
+
+.word_12pt a:link {
+	color: #333;
+	text-decoration:none;}
+
+.word_12pt a:visited {
+	color: #333;
+	text-decoration:none; }
+	
+.word_12pt a:hover {
+	color: #333;
+	text-decoration:none; }
+	
+.word_13ptbold {
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif "微軟新正黑";
+	color: #333;
+	line-height:24px;
+	font-weight:bold;}
+	
+.word_bottom {
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif "微軟新正黑";
+	color: #333;
+	line-height:24px;
+	font-weight:lighter;
+	padding:5px;
+	margin-top:10px;}
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="TDE_test" title="測試" border="normal" >
+    <zscript><![CDATA[ 
+
+    ]]>
+    </zscript>
+    <div></div>   
+        <div> Pincode 儲值</div>
+        <div><a href="https://pv.sso.aptg.com.tw/cas?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlinePinCodeDeposit.zhtml" label="官網儲值卡儲值(Pincode)"></a></div>
+        <div><a href="http://10.31.80.210:8080/EPAY/cms/EPAY_OnlinePinCodeDeposit.zhtml" label="CMS1(Pincode)"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/IBonPincodeOrder.html" label="IBonPincodeOrder"></a></div>
+        <div><a href="http://10.31.80.210:8080/EPAY/channel/OnlinePinCodeDeposit.zul" label="Channel PincodeOrder"></a></div>
+        <div><a href="http://10.31.80.210:8080/EPAY/nosso/OnlineNoSSO_PinCodeDeposit.zhtml" label="NOSSO PincodeOrder"></a></div>      
+        <div><a href="http://10.31.80.210:8080/EPAY/admin/login.zul" label="批次儲值卡儲值"></a></div>
+        <div></div>    
+        <div></div>
+
+        <div> 餘額抵扣 </div>
+        <div><a href="http://10.31.80.210:8080/EPAY/nosso/OnlineNoSSO_AdjustAccountDeposit.zhtml" label="NoSSO XX"></a></div>
+        <div><a href="http://10.31.80.210:8080/EPAY/cms/CMS_OnlineAdjustAccountDeposit.zhtml" label="CMS XX"></a></div>
+        <div><a href="https://pv.sso.aptg.com.tw/cas?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineAdjustAccountDeposit.zhtml" label="官網"></a></div>
+        <div></div>
+        <div></div>
+                 
+        <div> 網路儲值 </div>
+        <div><a href="https://pv.sso.aptg.com.tw/cas?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineVASDeposit.zhtml" label="官網"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/cpTransactionRecTest.html" label="模擬回傳網路儲值(信用卡)"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/cpATMRecTest.html" label="模擬回傳網路儲值(ATM)"></a></div>     
+        <div></div>
+        <div></div>
+        
+        <div>EPAYGW(IBON API Pincode儲值)</div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/IBonUserStateLookup.html" label="IBonUserStateLookup"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/IBonPincodeOrder.html" label="IBonPincodeOrder"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/IBonPincodeOrderStatus.html" label="IBonPincodeOrderStatus"></a></div>
+        <div></div>
+        <div></div>
+                
+        <div>門市POS儲值</div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/UserStateLookupRequest.html" label="POSUserStateLookup"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PosServiceLookup.html" label="PosServiceLookup"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PosServiceOrder.html" label="PosServiceOrder"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/POSServiceOrderStatus.html" label="POSServiceOrderStatus"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/PosUserAccountLookup.html" label="PosUserAccountLookup"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/POSPricePlanLookup.html" label="POSPricePlanLookup"></a></div>
+        <div></div>
+        <div></div>
+        
+        <div>餘額查詢</div>
+        <div><a href="https://pv.sso.aptg.com.tw/cas?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineBasicInfoDeposit.zhtml" label="餘額查詢(3G/4G)"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOBasicInfo.html" label="NoSSO餘額查詢"></a></div>
+        <div><a label="後台餘額查詢"></a></div>
+        
+          
+                    
+        <div>家鄉儲</div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/CountryAdd.html" label="家鄉儲"></a></div>
+        
+        
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOServiceOrder.html" label="NoSSO 網站儲值"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOPinCode.html" label="NoSSO儲值卡儲值(Pincode)"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOAdjustAccount.html" label="NoSSO餘額抵扣"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOBasicInfo.html" label="NoSSO餘額查詢"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/NoSSOTryQuery.html" label="NoSSO儲值紀錄查詢"></a></div>
+        <div></div>
+        <div> = TDE 官網 = </div>
+        
+        <div><a href="https://pv.sso.aptg.com.tw/cas?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineBasicInfoDeposit.zhtml" label="餘額查詢(3G/4G)"></a></div>
+        <div><a href="https://pv.sso.aptg.com.tw/cas?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineTransQuery.zhtml" label="儲值記錄查詢(3G/4G)"></a></div>
+        <div><a href="https://pv.sso.aptg.com.tw/cas?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineVASDeposit.zhtml" label="網站儲值"></a></div>
+        <div><a href="https://pv.sso.aptg.com.tw/cas?service=http://epaytde.aptg.com.tw/EPAY/deposit/OnlineAdjustAccountDeposit.zhtml" label="餘額抵扣"></a></div>
+
+        <div></div>
+        <div> = API TDE = </div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/cpTransactionRecTest.html" label="模擬授權結果回覆TransactionRec API Test"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/SubscriberLookupTest.html" label="虛擬儲值卡儲值清單ServiceLookupRequest API Test"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/VCardReserveTest.html" label="虛擬儲值卡預約ServiceReserveRequest API Test"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/VCardUnReserveTest.html" label="虛擬儲值卡取消預約ServiceUnReserveRequest API Test"></a></div>
+        <div><a href="http://epaytde.aptg.com.tw/EPAY/test/ServiceOrderTest.html" label="虛擬儲值卡儲值ServiceOrderRequest API Test"></a></div>
+        <div></div>
+    
+</window>

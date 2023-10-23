@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="VCardType_profile_Window" title="修改資料" border="normal" use="com.apt.epay.ui.admin.VCardType_profile_Window">
+
+
+    <grid width="100%">
+        <rows>
+            <row>
+                CardName:
+                <textbox id="text_cardname" />
+            </row>            
+            <row>
+                低水位:
+                <textbox id="text_lowthreshold"/>
+            </row>
+        </rows>
+    </grid>
+
+    <separator/>
+    <div align="center">
+        <hbox>
+            <button label="修改" onClick="VCardType_profile_Window.onModify()" />
+            <button label="返回"  href="main.zul" />
+
+        </hbox>
+    </div>
+</window>

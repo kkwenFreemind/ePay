@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="ExcelUtils">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/excelutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/commons-digester.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/poi-2.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/bsh-core-2.0b4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/commons-beanutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/webwork-2.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/xwork.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/ognl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/struts.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ExcelUtils/oscore.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

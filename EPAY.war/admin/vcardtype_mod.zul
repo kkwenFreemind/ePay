@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="亞太電信" ?>
+<window id="VCardType_mod_Window" title="修改服務" border="normal" use="com.apt.epay.ui.admin.VCardType_mod_Window">
+
+    <separator spacing="5px"  bar="true"/>
+
+    <separator bar="true"/>
+    <listbox id="list_vcardtype" width="100%" mold="paging" pageSize="10" multiple="false"  onSelect="VCardType_mod_Window.onSelect()">
+        <listhead>
+            <listheader label="CardType"  sort="auto"/>
+            <listheader label="CardName"  sort="auto"/>
+            <listheader label="價格(Price)" sort="auto"/>
+            <listheader label="數量(Quantity)" sort="auto"/>
+            <listheader label="低水位" sort="auto"/>
+        </listhead>
+    </listbox>
+</window>

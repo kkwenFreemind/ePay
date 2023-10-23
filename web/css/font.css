@@ -1,0 +1,16 @@
+.text11 {font-size: 11px;color: #000000; text-decoration: none; line-height: 16px ;	font-family: "Arial", "Helvetica", "sans-serif";letter-spacing:1pt}
+.text12 {font-size: 12px;color: #676767; text-decoration: none; line-height: 18px ;	font-family: "Arial", "Helvetica", "sans-serif";letter-spacing:1pt}
+.text13 {font-size: 12px;color: #676767; text-decoration: none; line-height: 20px;	font-family: "Arial", "Helvetica", "sans-serif";letter-spacing:1pt}
+
+
+.link12 {font-size: 12px;color: #676767;text-decoration: none;line-height: 18px;font-family: "Arial", "Helvetica", "sans-serif";letter-spacing:1pt}
+.link12 A {font-size: 12px;color: #676767;text-decoration: none;line-height: 18px;font-family: "Arial", "Helvetica", "sans-serif";}
+.link12 A:hover {font-size: 12px;color: #DA0000;text-decoration: none;line-height: 18px;font-family: "Arial", "Helvetica", "sans-serif";}
+
+.link11 {font-size: 11px;color: #676767;text-decoration: none;line-height: 16px;font-family: "Arial", "Helvetica", "sans-serif";letter-spacing:1pt}
+.link11 A {font-size: 11px;color: #676767;text-decoration: none;line-height: 16px;font-family: "Arial", "Helvetica", "sans-serif";}
+.link11 A:hover {font-size: 11px;color: #DA0000;text-decoration: none;line-height: 16px;font-family: "Arial", "Helvetica", "sans-serif";}
+
+.link12 {font-size: 11px;color: #999999;text-decoration: none;line-height: 16px;font-family: "Arial", "Helvetica", "sans-serif";letter-spacing:1pt}
+.link12 A {font-size: 11px;color: #999999;text-decoration: none;line-height: 16px;font-family: "Arial", "Helvetica", "sans-serif";}
+.link12 A:hover {font-size: 11px;color: #DA0000;text-decoration: none;line-height: 16px;font-family: "Arial", "Helvetica", "sans-serif";}
